@@ -1,0 +1,10 @@
+:root {
+    --color-primary: rgb(136, 192, 249);
+    --color-text: rgb(33, 53, 71);
+    --font-main: Inter, "Noto Sans", "Helvetica Neue", ui-sans-serif, system-ui;
+    --font-size-base: 16px;
+    --font-weight-nav: 500;
+    --line-height-base: 24px;
+    --letter-spacing-base: 0.16px;
+    --navbar-height: 80px;
+}
