@@ -63,7 +63,7 @@ function Navbar() {
                         <a href={link.href || '#'}>
                             {link.label} {link.dropdown && <span className="arrow">V</span>}
                         </a>
-                        {link.dropdown && activeDropdown == link.label && (
+                        {link.dropdown && activeDropdown === link.label && (
                             <ul className='dropdown'>
                                 {link.dropdown.map((item) => (
                                     <li key={item.label}>
