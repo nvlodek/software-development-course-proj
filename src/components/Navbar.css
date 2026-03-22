@@ -1,49 +1,108 @@
 .navbar {
     display: flex;
     align-items: center;
-    background-color: var(--color-primary);
     justify-content: space-between;
+    background-color: var(--color-primary);
     height: var(--navbar-height);
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 50;
     box-sizing: border-box;
-    padding: 0 24px;
+    padding: 0 40px;
+}
+
+/* Logo */
+.navbar-logo {
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar-logo-title {
     font-weight: 700;
     font-size: 16px;
+    color: var(--color-text);
 }
 
 .navbar-logo-subtitle {
     font-size: 12px;
+    color: var(--color-text);
 }
 
+/* Nav Links */
 .navbar-links {
     display: flex;
     list-style: none;
-    gap: 24px;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-links a {
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
     text-decoration: none;
     color: var(--color-text);
     font-weight: var(--font-weight-nav);
     font-size: var(--font-size-base);
     letter-spacing: var(--letter-spacing-base);
+    white-space: nowrap;
 }
 
+/* Nav item hover highlight */
+.nav-item:hover > a {
+    background-color: white;
+    color: #1a73e8;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.arrow {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border-radius: 4px;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 16px;
+    color: var(--color-text);
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #f0f7ff;
+    color: #1a73e8;
+}
+
+/* Hamburger */
 .hamburger {
     display: none;
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
+    color: var(--color-text);
 }
 
-/* mobile */
+/* Mobile */
 @media (max-width: 768px) {
     .navbar-links {
         display: none;
@@ -53,12 +112,21 @@
         left: 0;
         width: 100%;
         background-color: var(--color-primary);
+        padding: 16px;
+        gap: 16px;
     }
-    .navbar-links.open{
+
+    .navbar-links.open {
         display: flex;
     }
+
     .hamburger {
         display: block;
-        margin-left: auto;
+    }
+
+    .dropdown {
+        position: static;
+        box-shadow: none;
+        padding-left: 16px;
     }
 }
