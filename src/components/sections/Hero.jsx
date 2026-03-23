@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState} from "react";
 import { FaChartBar} from "react-icons/fa";
 import { SiGooglechrome} from "react-icons/si";
+import { Link } from "react-router-dom";
 import './Hero.css'
 
 function Hero() {
@@ -39,17 +40,19 @@ function Hero() {
                 {/* Buttons */}
                 <div className="hero-buttons">
                     <button className="btn-primary">
+                        View Sample Student Report
                         <FaChartBar className = "btn-icon"/>
-                        View Sample Student Report</button>
+                    </button>
                     <button className="btn-primary">
+                        Try it in Google Docs
                         <SiGooglechrome className = "btn-icon"/>
-                        Try it in Google Docs</button>
+                    </button>
                 </div>
 
                 {/* Stars */}
                 <div className="hero-stars">
                     <span>⭐⭐⭐⭐⭐</span>
-                    <p>Loved by students and teachers!</p>
+                    <p id="p1">Loved by students and teachers!</p>
                 </div>
 
                 {/* Bullet Points */}
