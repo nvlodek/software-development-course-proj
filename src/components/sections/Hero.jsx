@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState} from "react";
 import { FaChartBar} from "react-icons/fa";
 import { SiGooglechrome} from "react-icons/si";
-import { Link } from "react-router-dom";
 import './Hero.css'
 
 function Hero() {
