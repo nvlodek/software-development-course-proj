@@ -7,25 +7,25 @@ import logo from '../assets/images/UMSL Project logo design.png'
 const navLinks = [
     { label: 'Home', href:'/'},
     { label: 'Student Tools', dropdown: [
-            { label: 'Start Writing', href: '#'},
-            { label: 'Start Coding', href: '#'},
-            { label: 'Extension for Google Docs', href: '#'},
-            { label: 'Process Feedback Extension', href: '#'},
-            {label: 'Student Guides', href: '#'},
+            { label: 'Start Writing', href: '/404', newTab: true},
+            { label: 'Start Coding', href: '/404', newTab: true},
+            { label: 'Extension for Google Docs', href: '/404', newTab: false},
+            { label: 'Process Feedback Extension', href: '/404', newTab: false},
+            { label: 'Student Guides', href: '/404', newTab: false},
         ],
     },
     { label: 'Teacher Tools', dropdown: [
-            { label: 'Create an Editor', href: '#'},
-            { label: 'Create an Assignment', href: '#'},
-            { label: 'Extension for Google Docs', href: '#'},
-            { label: 'Extension for LMS', href: '#'},
-            { label: 'Upcoming Webinar', href: '#'},
-            { label: 'Teacher Guides', href: '#'},
+            { label: 'Create an Editor', href: '/404', newTab: false},
+            { label: 'Create an Assignment', href: '/404', newTab: false},
+            { label: 'Extension for Google Docs', href: '/404', newTab: false},
+            { label: 'Extension for LMS', href: '/404', newTab: false},
+            { label: 'Upcoming Webinar', href: '/404', newTab: true},
+            { label: 'Teacher Guides', href: '/404', newTab: false},
         ],
     },
     { label: 'Institutions', dropdown: [
             {label: 'Canvas Users', href: '#'},
-            {label: 'DTL Users', href: '#'},
+            {label: 'D2L Users', href: '#'},
             {label: 'Moodle Users', href: '#'},
             {label: 'Blackboard Users', href: '#'},
             {label: 'Google Docs Users', href: '#'},
@@ -72,7 +72,11 @@ function Navbar() {
                             <ul className='dropdown'>
                                 {link.dropdown.map((item) => (
                                     <li key={item.label}>
-                                        <a href={item.href}>{item.label}</a>
+                                        <a  href = {item.href}
+                                        target = {item.newTab ? '_blank' : '_self'}
+                                        rel = {item.newTab ? 'noreferrer' : undefined}>
+                                            {item.label}
+                                    </a>
                                     </li>
                                 ))}
                             </ul>

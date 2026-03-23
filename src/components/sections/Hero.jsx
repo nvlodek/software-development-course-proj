@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState} from "react";
-import { FaChartBar} from "react-icons/fa";
-import { SiGooglechrome} from "react-icons/si";
+import { FaChartBar } from "react-icons/fa";
+import { SiGooglechrome } from "react-icons/si";
+import { FaArrowRight } from "react-icons/fa"
 import './Hero.css'
 
 function Hero() {
@@ -57,14 +58,14 @@ function Hero() {
                 {/* Bullet Points */}
                 <div className="hero-bullets">
                     <div className="bullet-column">
-                        <p><span className="arrow">→</span> See copy-paste events, editing time, etc.</p>
-                        <p><span className="arrow">→</span> Encourage students to think and reflect</p>
-                        <p><span className="arrow">→</span> Identify why students struggle to write</p>
+                        <p><FaArrowRight className="arrow"/> See copy-paste events, editing time, etc.</p>
+                        <p><FaArrowRight className="arrow"/> Encourage students to think and reflect</p>
+                        <p><FaArrowRight className="arrow"/> Identify why students struggle to write</p>
                     </div>
                     <div className="bullet-column">
-                        <p><span className="arrow">→</span> Prevent plagiarism through transparency</p>
-                        <p><span className="arrow">→</span> Promote academic integrity meaningfully</p>
-                        <p><span className="arrow">→</span> Explore how students use AI</p>
+                        <p><FaArrowRight className="arrow"/> Prevent plagiarism through transparency</p>
+                        <p><FaArrowRight className="arrow"/> Promote academic integrity meaningfully</p>
+                        <p><FaArrowRight className="arrow"/> Explore how students use AI</p>
                     </div>
                 </div>
             </div>
