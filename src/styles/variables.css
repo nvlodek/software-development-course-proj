@@ -7,4 +7,8 @@
     --line-height-base: 24px;
     --letter-spacing-base: 0.16px;
     --navbar-height: 80px;
+    --color-hero-bg: rgb(182, 221, 252);
+    --color-hero-title: rgb(0, 63, 129);
+    --color-btn-primary: rgb(2, 125, 255);
+    --color-arrow: rgb(110, 179, 250);
 }
