@@ -3,37 +3,50 @@
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-primary);
-    height: var(--navbar-height);
+    height: 84px; /* slightly taller */
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 50;
     box-sizing: border-box;
-    padding: 0 40px;
+    padding: 0 24px; /* tighter horizontal spacing */
 }
 
 /* Logo */
 .navbar-logo {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-logo-img {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+    background: transparent;
 }
 
 .navbar-logo-title {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px; /* slightly larger */
     color: var(--color-text);
 }
 
 .navbar-logo-subtitle {
-    font-size: 12px;
+    margin-top: 4px;
+    font-size: 13px;
     color: var(--color-text);
+    opacity: 0.9;
 }
 
 /* Nav Links */
 .navbar-links {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 28px; /* slightly tighter */
     margin: 0;
     padding: 0;
 }
@@ -45,30 +58,33 @@
 .nav-item a {
     text-decoration: none;
     color: var(--color-text);
-    font-weight: var(--font-weight-nav);
-    font-size: var(--font-size-base);
-    letter-spacing: var(--letter-spacing-base);
+    font-weight: 500; /* more realistic */
+    font-size: 16px;
+    letter-spacing: 0.3px;
     white-space: nowrap;
 }
 
-/* Nav item hover highlight */
+/* Subtle hover effect (less aggressive) */
 .nav-item:hover > a {
-    background-color: white;
     color: #1a73e8;
-    padding: 4px 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 4px 8px;
     border-radius: 4px;
 }
 
+/* Arrow */
 .arrow {
-    font-size: 12px;
-    margin-left: 4px;
+    font-size: 10px;
+    margin-left: 6px;
+    position: relative;
+    top: -1px;
 }
 
 /* Dropdown */
 .dropdown {
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     background-color: white;
     list-style: none;
     padding: 8px 0;
@@ -108,7 +124,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: var(--navbar-height);
+        top: 72px;
         left: 0;
         width: 100%;
         background-color: var(--color-primary);
