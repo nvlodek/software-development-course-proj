@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css'
 import logo from '../assets/images/UMSL Project logo design.png'
-import {Link } from 'react-router-dom'
+
 
 
 const navLinks = [
@@ -49,12 +49,12 @@ function Navbar() {
     return (
         <nav className = "navbar">
             {/* Logo */}
-            <Link to="/" className="navbar-logo">
+            <a href="/" className="navbar-logo">
                 <img src={logo} alt="course project logo" className="navbar-logo-img" />
                 <div className="navbar-logo-subtitle">
                     Every Student's Work Has a Story
                 </div>
-            </Link>
+            </a>
 
             {/* Desktop links */}
             <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
