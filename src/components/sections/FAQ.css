@@ -1,0 +1,108 @@
+.expandable {
+    --xy-padding: 14px;
+    --border-radius: 6px;
+    --transition-ms: 0.3s;
+
+    width: 100%;
+    background-color: white;
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+}
+
+.expandable__icon {
+    transition: transform var(--transition-ms);
+
+}
+
+.expandable--open .expandable__content-wrapper{
+    grid-template-rows: 1fr;
+}
+
+.expandable--open .expandable__icon {
+    transform: rotate(180deg);
+}
+
+.expandable__title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--xy-padding);
+    user-select: none;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    color: rgb(33, 53, 71);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.expandable__title-bar:hover {
+    background-color: rgb(219, 234, 254);
+    border: 1px solid #213547;
+}
+
+.expandable--open .expandable__title-bar {
+    border-radius: 8px 8px 0 0;
+}
+
+.expandable__title {
+    font-weight: 600;
+    font-size: 15px;
+    font-family: var(--font-main);
+}
+
+.expandable__content {
+    padding: 0 var(--xy-padding);
+    line-height: 1.4;
+    font-size: 0.85em;
+    border-style: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.expandable__content-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+.FAQ-landscape {
+    background-color: rgb(237,241,250);
+    align-items: center;
+    padding: 40px 20px;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+.FAQ-landscape.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.FAQ-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.FAQ_link {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.faqp {
+    font-size: 16px;
+    font-family: var(--font-main);
+}
+
+.outer-border {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
