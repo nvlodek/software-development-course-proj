@@ -174,7 +174,7 @@ function FAQ () {
                             By contrast, Process Feedback can discourage plagiarism at the outset,
                             especially if students are asked to <a className="FAQ_link" href='./404'> reflect on their process </a>
                             and see how their work evolves over time. Also, you can refer to our guide on
-                            <a className="FAQ_link"> identifying AI-assisted writing patterns.</a>
+                            <a className="FAQ_link" href="/404"> identifying AI-assisted writing patterns.</a>
                         </p>
                     </div>
                 </div>
@@ -228,7 +228,7 @@ function FAQ () {
                         </p>
                         <p className="faqp">
                             For detailed instructions on how to integrate Process Feedback into your
-                            course, please read our <a className="FAQ_link">Teacher Guides.</a>
+                            course, please read our <a className="FAQ_link" href='/404'>Teacher Guides.</a>
                         </p>
                     </div>
                 </div>
