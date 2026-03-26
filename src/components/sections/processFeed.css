@@ -1,0 +1,150 @@
+.align {
+    text-align: right;
+}
+
+.centered_header {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(128, 40, 0);
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.processFeed {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.processFeed-wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.main_img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.firstp,
+.secondp {
+    text-align: left;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #2c3e50;
+    max-width: 750px;
+}
+
+.quote-section {
+    position: relative;
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 40px 60px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.quote-text {
+    font-size: 20px;
+    color: #2c3e50;
+    line-height: 1.6;
+    display: block;
+    margin-bottom: 16px;
+    /* Step 1: define the gradient */
+    background-image: linear-gradient(to right, transparent 0%, #f2e8e3 20%, #f2e8e3 80%, transparent 100%);
+    /* Step 2: size the band narrower than the element */
+    background-size: 60% 100%;
+    /* Step 3: start it off the left edge */
+    background-position: -60% center;
+    background-repeat: no-repeat;
+}
+
+.quote-text.highlight-text {
+    animation: swipe 1.2s ease forwards;
+}
+
+@keyframes swipe {
+    from { background-position: -60% center; }
+    to   { background-position: 300% center; }
+}
+
+.quote-footer {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.quote-mark {
+    position: absolute;
+    font-size: 60px;
+    color: #8b2e00;
+    line-height: 1;
+}
+
+.quote-mark.top {
+    top: -15px;
+    left: -5px;
+}
+
+.quote-mark.top::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 55px;
+    width: 60px;
+    height: 2px;
+    background: #8b2e00;
+}
+
+.quote-mark.top::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    width: 2px;
+    height: 35px;
+    background: #8b2e00;
+}
+
+.quote-mark.bottom {
+    bottom: -15px;
+    right: -5px;
+}
+
+.quote-mark.bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 28px;
+    left: -65px;
+    width: 60px;
+    height: 2px;
+    background: #8b2e00;
+}
+
+.quote-mark.bottom::before {
+    content: "";
+    position: absolute;
+    bottom: 55px;
+    right: 10px;
+    width: 2px;
+    height: 35px;
+    background: #8b2e00;
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade.show{
+    opacity: 1;
+    transform: translateY(0);
+}
