@@ -1,5 +1,5 @@
 import './processFeed.css'
-import React, {createRef, useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import photo from "../../assets/images/what-is-pf.svg.svg"
 
 
@@ -81,7 +81,7 @@ function ProcessFeed() {
                 ref = {imgRef}
                 className={`main-img fade ${visible.img ? "show" : ""}`}
                 src={photo}
-                alt = 'Process Feedback Photo'
+                alt = 'Process Feedback'
             />
             <p
                 ref = {secRef}
