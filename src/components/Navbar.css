@@ -9,6 +9,7 @@
     z-index: 50;
     box-sizing: border-box;
     padding: 0 24px; /* tighter horizontal spacing */
+    position: fixed;
 }
 
 /* Logo */
@@ -122,26 +123,44 @@
     .navbar-links {
         display: none;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 72px;
         left: 0;
         width: 100%;
         background-color: var(--color-primary);
+        height: calc(100vh - var(--navbar-height));
         padding: 16px;
-        gap: 16px;
+        gap: 8px;
+        z-index: 999;
+        overflow-y: auto;
     }
 
     .navbar-links.open {
         display: flex;
     }
 
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid rgba(33, 53, 71, 0.15);
+        padding: 8px 0;
+    }
+
+    .nav-item a {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+    }
+
     .hamburger {
         display: block;
+        margin-left: auto;
+        z-index: 1000;
     }
 
     .dropdown {
         position: static;
         box-shadow: none;
         padding-left: 16px;
+        background-color: transparent;
     }
 }

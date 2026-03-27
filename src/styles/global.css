@@ -12,3 +12,8 @@ body {
     color: var(--color-text);
     line-height: var(--line-height-base);
 }
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
