@@ -1,0 +1,143 @@
+.teachTools {
+    text-align: center;
+    background: linear-gradient(135deg, #eaf7ea, #d4edda);
+    padding: 60px 20px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 220px;
+    padding: 30px 20px;
+    border-radius: 24px;
+
+    background: linear-gradient(180deg, #cfead6 0%, #a8e0c2 100%);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+/* hover effect (important for realism) */
+.card:hover {
+    transform: rotate(-2deg);
+    border-color: #82ffd6;
+    background: linear-gradient(180deg, #c2e6cc, #a8d5b8);
+}
+
+.card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1a6b3a;
+    font-size: 20px;
+    font-family: var(--font-main);
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card li {
+    margin: 8px 0;
+    position: relative;
+    padding-left: 20px;
+    color: #2d5a3d;
+    font-size: 14px;
+}
+
+/* arrow bullets */
+.card li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #2d5a3d;
+}
+
+/* button */
+.card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 10px 18px;
+    border-radius: 999px;
+
+    border: 1px solid rgba(0, 120, 80, 0.25);
+
+    background: rgba(255, 255, 255, 0.2); /* lighter glass */
+    backdrop-filter: blur(6px); /* 🔥 key detail */
+
+    cursor: pointer;
+    font-size: 14px;
+    color: #1f5f3a;
+
+    transition: all 0.2s ease;
+}
+
+.card-btn span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 18px;
+    height: 18px;
+
+    border: 1.5px solid #1f5f3a;
+    border-radius: 4px;
+
+    font-size: 10px;
+}
+
+.card-btn:hover {
+    border-color: #1f8f5a;
+    background: rgba(255, 255, 255, 0.25); /* subtle, not white */
+}
+
+
+.teachTools-description {
+    font-family: var(--font-main);
+}
+
+.addInfo {
+    font-family: var(--font-main);
+}
+
+/* base hidden state */
+.fade-element {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.fade-element.show.title {
+    animation: fadeUp 0.6s ease forwards;
+    animation-delay: 0.1s;
+}
+
+.fade-element.show.paragraph {
+    animation: fadeUp 0.6s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.fade-element.show.cards {
+    animation: fadeUp 0.6s ease forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
