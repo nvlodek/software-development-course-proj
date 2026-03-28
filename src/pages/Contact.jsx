@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Contact.css';
 
-// Replace with your actual Formspree endpoint
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mgopoydz';
 
 // Placeholder component for illustrations (replace src with actual images later)
 function Illustration({ src, alt, className = '', placeholderClass = '' }) {

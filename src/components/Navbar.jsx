@@ -37,7 +37,7 @@ const navLinks = [
             { label: 'About the Project', href: '#'},
             { label: 'Related Research', href: '#'},
             { label: 'Team', href: '#'},
-            { label: 'Contact Us', href: '#'},
+            { label: 'Contact Us', href: '/contact'},
         ],
     },
 ];

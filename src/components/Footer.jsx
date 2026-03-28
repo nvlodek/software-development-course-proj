@@ -68,7 +68,7 @@ const footerSections = [
     {
         heading: 'Contact Us',
         links: [
-            { label: 'Contact Us', href: '/404' },
+            { label: 'Contact Us', href: '/contact' },
             { label: 'Schedule a Meeting', href: '/404' },
         ],
     },
