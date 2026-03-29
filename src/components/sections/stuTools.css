@@ -49,7 +49,7 @@
 
 /* hover */
 .stuTools .card:hover {
-    transform: translateY(-8px);
+    transform: rotate(-2deg);
     background: linear-gradient(180deg, #b7cbe4 0%, #8fb0d4 100%);
 }
 
