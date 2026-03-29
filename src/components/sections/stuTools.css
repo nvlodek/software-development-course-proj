@@ -1,0 +1,111 @@
+.stuTools {
+    text-align: center;
+    background: #f3f4f6;
+    padding: 80px 20px;
+}
+
+/* title */
+.stuTools-title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: var(--font-main);
+}
+
+/* description */
+.stuTools-description {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #5f6f7f;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: var(--font-main);
+}
+
+/* container */
+.stuTools .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+/* cards */
+.stuTools .card {
+    width: 260px;
+    padding: 35px 25px;
+    border-radius: 28px;
+
+    background: linear-gradient(180deg, #c7d6ea 0%, #9bb8d8 100%);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.3s ease;
+}
+
+/* hover */
+.stuTools .card:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(180deg, #b7cbe4 0%, #8fb0d4 100%);
+}
+
+/* title */
+.stuTools .card-title {
+    font-size: 22px;
+    color: #1f4f8b;
+    margin-bottom: 20px;
+    font-family: var(--font-main);
+}
+
+/* list */
+.stuTools .card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.stuTools .card li {
+    margin: 10px 0;
+    padding-left: 22px;
+    position: relative;
+    color: #2f5d8a;
+    font-size: 15px;
+}
+
+.stuTools .card li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #5f86b3;
+    font-size: 16px;
+}
+
+/* button */
+.stuTools .card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 20px;
+    border-radius: 999px;
+
+    border: 1px solid rgba(30, 80, 140, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+
+    color: #1f4f8b;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* hover */
+.stuTools .card-btn:hover {
+    border-color: #1f4f8b;
+    background: rgba(255, 255, 255, 0.35);
+}

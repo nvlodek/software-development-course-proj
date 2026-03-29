@@ -104,16 +104,16 @@ function Footer() {
                     <a href="/404">Terms of Use</a>
                 </div>
                 <div className="footer-social">
-                    <a href="/404" target="_blank" rel="noreferrer" className="social-icon facebook">
+                    <a href="https://www.facebook.com/processfeedback/" target="_blank" rel="noreferrer" className="social-icon facebook">
                         <FaFacebook/>
                     </a>
-                    <a href="/404" target="_blank" rel="noreferrer" className="social-icon">
+                    <a href="https://x.com/processfeedback" target="_blank" rel="noreferrer" className="social-icon">
                         <FaTwitter/>
                     </a>
-                    <a href="/404" target="_blank" rel="noreferrer" className="social-icon">
+                    <a href="https://www.linkedin.com/company/process-feedback/" target="_blank" rel="noreferrer" className="social-icon">
                         <FaLinkedin/>
                     </a>
-                    <a href="/404" target="_blank" rel="noreferrer" className="social-icon">
+                    <a href="https://www.youtube.com/@ProcessFeedback" target="_blank" rel="noreferrer" className="social-icon">
                         <FaYoutube/>
                     </a>
                 </div>
