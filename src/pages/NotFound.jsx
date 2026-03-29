@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NotFound.css';
+import errorImage from '../assets/images/404-page-1.webp';
 
 function NotFound() {
     return (
@@ -8,8 +9,8 @@ function NotFound() {
             <section className="notfound-section">
                 {/* Replace src with actual 404 image later */}
                 <div className="notfound-illustration">
-                    <div className="notfound-illustration-placeholder">
-                        <span>404 Error Illustration</span>
+                    <div className="notfound-illustration">
+                        <img src={errorImage} alt="404 error illustration" />
                     </div>
                 </div>
                 <h2 className="notfound-heading">Page Not Found</h2>

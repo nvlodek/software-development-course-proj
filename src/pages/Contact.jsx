@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Contact.css';
+import emailImage from '../assets/images/contact-page-1.webp';
+import sendMessage from '../assets/images/contact-page-2.webp';
+import founderMeeting from '../assets/images/contact-page-3.webp';
+import careerImage from '../assets/images/contact-page-4.webp';
+import followUs from '../assets/images/contact-page-5.webp';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mgopoydz';
 
@@ -313,7 +318,7 @@ function Contact() {
                             </div>
                         </div>
                         <div className="contact-illustration">
-                            <Illustration src={null} alt="Vector illustration of contact us" />
+                            <img src={emailImage} alt="Vector illustration of contact us" />
                         </div>
                     </div>
                 </section>
@@ -331,7 +336,7 @@ function Contact() {
                     </p>
                     <div className="contact-section-inner">
                         <div className="form-illustration contact-illustration">
-                            <Illustration src={null} alt="Vector illustration of mail inbox in phone" placeholderClass="form-illustration-placeholder" />
+                            <img src={sendMessage} alt="Vector illustration of mail inbox in phone"/>
                         </div>
                         <div className="contact-form-card">
                             <form className="contact-form" onSubmit={handleSubmit} method="post">
@@ -399,7 +404,7 @@ function Contact() {
                             </div>
                         </div>
                         <div className="contact-illustration">
-                            <Illustration src={null} alt="Icon of calendar" />
+                            <img src={founderMeeting} alt="Icon of calendar" />
                         </div>
                     </div>
                 </section>
@@ -411,7 +416,7 @@ function Contact() {
                     <h2>Careers at Process Feedback</h2>
                     <div className="contact-section-inner">
                         <div className="contact-illustration">
-                            <Illustration src={null} alt="Icon of planning a tree" />
+                            <img src={careerImage} alt="Icon of planning a tree" />
                         </div>
                         <div>
                             <p>
@@ -435,7 +440,7 @@ function Contact() {
                     <div className="follow-card contact-animate" ref={addSectionRef}>
                         <div className="follow-card-inner">
                             <div className="follow-illustration contact-illustration">
-                                <Illustration src={null} alt="Vector illustration of follow us" placeholderClass="follow-illustration-placeholder" />
+                                <img src={followUs} alt="Vector illustration of follow us"/>
                             </div>
                             <div className="follow-text">
                                 <div style={{ padding: '0 16px', textAlign: 'center' }}>
