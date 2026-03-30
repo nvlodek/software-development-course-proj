@@ -9,6 +9,7 @@ import followUs from '../assets/images/contact-page-5.webp';
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mgopoydz';
 
 // Placeholder component for illustrations (replace src with actual images later)
+/*
 function Illustration({ src, alt, className = '', placeholderClass = '' }) {
     const [loaded, setLoaded] = useState(false);
     const [error, setError] = useState(false);
@@ -40,6 +41,7 @@ function Illustration({ src, alt, className = '', placeholderClass = '' }) {
         </>
     );
 }
+*/
 
 // Generate decorative oval elements for the hero background
 function HeroOvals() {
