@@ -43,9 +43,9 @@
     font-size: 3rem;
     max-width: 896px;
     margin: 0 auto;
-    color: var(--color-hero-title, #003f81);
+    color: #1a3a5c;
     font-family: var(--font-main);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .contact-hero-content p {
@@ -84,7 +84,7 @@
 @media (min-width: 1024px) {
     .contact-section-inner {
         flex-direction: row;
-        max-width: 1152px;
+        max-width: 900px;
     }
 }
 
@@ -98,7 +98,7 @@
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
     font-family: var(--font-main);
     color: var(--color-text);
     line-height: 1.6;
@@ -183,7 +183,7 @@
 
 .contact-illustration img {
     border-radius: 12px;
-    max-width: 260px;
+    max-width: 220px;
     width: 100%;
     height: auto;
 }

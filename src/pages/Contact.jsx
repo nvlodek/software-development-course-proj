@@ -167,7 +167,7 @@ function Contact() {
     };
 
     const handleCopyEmail = async () => {
-        const email = 'contact@processfeedback.org';
+        const email = 'rkpmd@umsl.edu';
         try {
             await navigator.clipboard.writeText(email);
             setCopyStatus({
@@ -195,7 +195,7 @@ function Contact() {
                 setCopyStatus({
                     show: true,
                     type: 'error',
-                    message: 'Copy failed. Please manually copy contact@processfeedback.org.'
+                    message: 'Copy failed. Please manually copy rkpmd@umsl.edu.'
                 });
             }
         }
@@ -274,7 +274,7 @@ function Contact() {
         } catch {
             setStatus({
                 type: 'error',
-                message: 'Sending failed! Please email us directly at contact@processfeedback.org.'
+                message: 'Sending failed! Please email us directly at rkpmd@umsl.edu.'
             });
         } finally {
             setIsSubmitting(false);
@@ -300,8 +300,8 @@ function Contact() {
                         <div className="email-text">
                             <p>
                                 We can be reached at{' '}
-                                <a href="mailto:contact@processfeedback.org" target="_blank" rel="noopener noreferrer">
-                                    contact@processfeedback.org
+                                <a href="mailto:rkpmd@umsl.edu" target="_blank" rel="noopener noreferrer">
+                                    rkpmd@umsl.edu
                                 </a>
                                 , which is <strong>our preferred method</strong> of communication.
                                 Please email us directly with your email account.
