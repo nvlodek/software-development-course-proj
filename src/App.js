@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
              <Route path="/" element={<Home/>} />
              <Route path="/contact" element={<Contact/>} />
              <Route path="*" element={<NotFound/>} />
+             <Route path="/pages/PrivacyPolicy.jsx" element={<PrivacyPolicy/>} />
          </Routes>
          <Footer />
          </Router>
