@@ -99,7 +99,7 @@ function Footer() {
                     <span>No copyrights; </span>
                     <a href="https://copyleft.org" target="_blank" rel="noreferrer">Copyleft</a>
                     <span> <FaCopyright className="cpyrght"/> 2025, Process Feedback, LLC <GoDotFill/></span>
-                    <a href="/404">Privacy Policy</a>
+                    <a href="../pages/PrivacyPolicy.jsx">Privacy Policy</a>
                     <span><GoDotFill/></span>
                     <a href="/404">Terms of Use</a>
                 </div>
