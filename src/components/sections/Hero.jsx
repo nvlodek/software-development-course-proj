@@ -33,8 +33,8 @@ function Hero() {
             {/* Animated Content */}
             <div className={`hero-content ${visible ? 'visible' : ''}`}>
                 <p className={"hero-subtitle"}>
-                    Process Feedback is a learning-first alternative to plagiarism or AI detection. It enables teachers and students to see
-                    the writing process or AI use, and to discuss how the learning process can be improved.
+                   "This project is a duplicate of a real-public website created solely for academic purposes. The
+                    original website is available at <a href="https://processfeedback.org/" target='_blank' rel="noreferrer" className='heroLink'>www.processfeedback.org</a>."
                 </p>
 
                 {/* Buttons */}
