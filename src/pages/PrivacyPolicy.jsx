@@ -209,7 +209,7 @@ function PrivacyPolicy() {
                     the child's account or data. We do not use personally identifying information collected from children
                     for marketing or promotional purposes, and we do not disclose such information to any third party
                     for any purpose whatsoever. If you are a parent or guardian and believe that your child has provided
-                    us with personal data without your consent, please contact us at <a href="mailto:contact@processfeedback.org" target='_blank' className="link">contact@processfeedback.org</a>.
+                    us with personal data without your consent, please contact us at <a href="mailto:contact@processfeedback.org" target="blank" rel="noreferrer" className="link">contact@processfeedback.org</a>.
                 </p>
                 <h2 className="subsection-header">d) Links to other web sites</h2>
                 <p className="subsection-description">
@@ -331,15 +331,15 @@ function PrivacyPolicy() {
                 </p>
                 <h2 className="subsection-header">f) Use of analytics on the public website</h2>
                 <p className="subsection-description">
-                    PF utilizes Google Analytics solely on its public-facing website, <a href="http://www.processfeedback.org" target="_blank" className="link">http://www.processfeedback.org</a>,
+                    PF utilizes Google Analytics solely on its public-facing website, <a href="http://www.processfeedback.org" target="blank" rel="noreferrer" className="link">http://www.processfeedback.org</a>,
                     for the purpose of understanding visitor interactions and enhancing the user experience. This analytics
                     data is collected in an aggregate form and does not include personally identifiable information.
                 </p>
                 <h2 className="subsection-header">g) No analytics on core application</h2>
                 <p className="subsection-description">
                     PF does not employ Google Analytics or any other similar tracking or analytics tools within its core
-                    application. For example, the Chrome extension page at <a href="https://app.processfeedback.org/gdocs" className="link" target="_blank">http://app.processfeedback.org/gdocs</a> or
-                    the online editor at <a href="https://app.processfeedback.org/writing" className='link' target="_blank">http://app.processfeedback.org/writing</a> do not incorporate any
+                    application. For example, the Chrome extension page at <a href="https://app.processfeedback.org/gdocs" className="link" target="blank" rel="noreferrer">http://app.processfeedback.org/gdocs</a> or
+                    the online editor at <a href="https://app.processfeedback.org/writing" className='link' target="blank" rel="noreferrer">http://app.processfeedback.org/writing</a> do not incorporate any
                     analytics technologies.
                 </p>
                 <h1 className="section-header">8. Information Security</h1>
@@ -377,7 +377,7 @@ function PrivacyPolicy() {
                     Users have the right at any time to cease permitting personal information to be collected, used, or
                     disclosed by PF and/or by any third parties with whom PF has shared and/or transferred such
                     personal information. The right of cancellation may be exercised by contacting PF via email at
-                    <a href="mailto:contact@processfeedback.org" className="link" target="_blank">contact@processfeedback.org</a>. In order to facilitate the deletion of personal information, users must
+                    <a href="mailto:contact@processfeedback.org" className="link" target="blank" rel="noreferrer">contact@processfeedback.org</a>. In order to facilitate the deletion of personal information, users must
                     provide all necessary details as requested by PF. Upon receipt of the request and necessary
                     information, PF will promptly delete the user's personal information from its database
                 </p>
@@ -386,7 +386,7 @@ function PrivacyPolicy() {
                 <p className="subsection-description">
                     Upon the user's request, PF will provide a reasonable description of the personally identifiable
                     information that PF maintains in its database. Users can contact PF via email at
-                    <a href="mailto:contact@processfeedback.org" className="link" target="_blank">contact@processfeedback.org</a> to request this information. It's important to note that PF cannot
+                    <a href="mailto:contact@processfeedback.org" className="link" target="blank" rel="noreferrer">contact@processfeedback.org</a> to request this information. It's important to note that PF cannot
                     access or delete user content without specific identification of the data being stored. Therefore,
                     individual users and non-DPA accounts must submit their requests from the email address
                     associated with the content and are advised to maintain a copy of the identification details
@@ -402,7 +402,7 @@ function PrivacyPolicy() {
                     PF may not collect personal information for direct marketing purposes, we acknowledge your rights
                     as a California resident under California Civil Code Section 1798.83. If you have any questions or
                     concerns regarding PF's handling of personal information, you may contact us at
-                    <a href="mailto:contact@processfeedback.org" className="link" target="_blank">contact@processfeedback.org</a>. While we may not have direct marketing practices, we are committed
+                    <a href="mailto:contact@processfeedback.org" className="link" target="blank" rel="noreferrer">contact@processfeedback.org</a>. While we may not have direct marketing practices, we are committed
                     to providing transparency regarding your personal information. If applicable, within 30 days of
                     receiving such a request, PF will provide information regarding the categories of personal
                     information that may be disclosed to third parties for their direct marketing purposes, if any, along
@@ -449,22 +449,22 @@ function PrivacyPolicy() {
                 <h2 className="subsection-header">a) Questions, problems, or complaints</h2>
                 <p className="subsection-description">
                     If you have a question about this policy statement or a complaint about PF's compliance with this
-                    privacy policy, you may contact PF by email at <a href="mailto:contact@processfeedback.org" className="link" target="_blank">contact@processfeedback.org</a>.
+                    privacy policy, you may contact PF by email at <a href="mailto:contact@processfeedback.org" className="link" target="blank" rel="noreferrer">contact@processfeedback.org</a>.
                 </p>
                 <h2 className="subsection-header">b) Terms of use</h2>
                 <p className="subsection-description">
                     By choosing to use PF's services, you hereby acknowledge and accept PF's practices as described in
                     this Privacy Policy. Any dispute over privacy between you and PF is subject to the provisions of this
                     notice and to PF's Terms of Service Agreement, which is hereby incorporated by reference. You can
-                    review the Terms of Service Agreement at <a href="https://processfeedback.org/terms/" target="_blank" className="link">processfeedback.org/terms</a>.
+                    review the Terms of Service Agreement at <a href="https://processfeedback.org/terms/" target="blank" rel="noreferrer" className="link">processfeedback.org/terms</a>.
                 </p>
                 <div className="policy-buttons">
                     <button className="btn-primary">
-                        <a href="https://processfeedback.org/terms/" className="btn-link" target="_blank">
+                        <a href="https://processfeedback.org/terms/" className="btn-link" target="blank" rel="noreferrer">
                             Read: Terms and Conditions </a>
                     </button>
                     <button className="btn-primary">
-                        <a href="https://processfeedback.org/docs/institutions/" className="btn-link" target="_blank">
+                        <a href="https://processfeedback.org/docs/institutions/" className="btn-link" target="blank" rel="noreferrer">
                         Read: Docs and Institutions
                         </a>
                     </button>
