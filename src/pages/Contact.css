@@ -3,19 +3,18 @@
 /* Hero Section */
 .contact-hero {
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 24px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #b6ddfb;
+    background-color: #e7f0fd;
 }
-
 @media (min-width: 768px) {
     .contact-hero {
-        padding-top: 120px;
-        padding-bottom: 40px;
+        padding-top: 80px;
+        padding-bottom: 50px;
     }
 }
 
@@ -40,19 +39,24 @@
 
 .contact-hero-content h1 {
     opacity: 0.8;
-    font-size: 3rem;
+    font-size: 48px;
     max-width: 896px;
     margin: 0 auto;
-    color: #1a3a5c;
+    color: #213547;
     font-family: var(--font-main);
     font-weight: 400;
+    letter-spacing: 0.16px;
+    line-height: 48px;
 }
 
 .contact-hero-content p {
     opacity: 0.8;
     margin-top: 16px;
-    color: var(--color-text);
+    color: #213547;
     font-family: var(--font-main);
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    line-height: 24px;
 }
 
 /* ========== SECTION STYLES ========== */
