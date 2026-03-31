@@ -1,0 +1,110 @@
+.faqpage-landscape {
+    background-color: rgb(237, 241, 250);
+    padding: 40px 20px 60px 20px;
+}
+
+.faqpage-expandable__content a.faqpage-link {
+    text-decoration: underline;
+    color: var(--color-text);
+}
+
+.faqpage-header {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.faqpage-outer-border {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faqpage-expandable {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.faqpage-expandable__title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--color-text);
+    user-select: none;
+}
+
+.faqpage-expandable__title-bar:hover {
+    background-color: rgb(219, 234, 254);
+}
+
+.faqpage-expandable__title {
+    font-weight: bold;
+}
+
+.faqpage-expandable__icon {
+    transition: transform 0.3s;
+}
+
+.faqpage-expandable--open .faqpage-expandable__content-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.faqpage-expandable--open .faqpage-expandable__icon {
+    transform: rotate(180deg);
+}
+
+.faqpage-expandable__content-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+.faqpage-expandable__content {
+    min-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.faqpage-expandable--open .faqpage-expandable__content {
+    padding: 12px 20px 16px;
+}
+
+.faqpage-p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.faqpage-link {
+    color: var(--color-btn-primary);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .faqpage-landscape {
+        padding: 24px 16px 40px 16px;
+    }
+
+    .faqpage-header {
+        font-size: 20px;
+    }
+
+    .faqpage-expandable__title {
+        font-size: 14px;
+    }
+}

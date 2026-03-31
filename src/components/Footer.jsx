@@ -62,7 +62,7 @@ const footerSections = [
         links: [
             { label: 'Pricing', href: '/404' },
             { label: 'Institutional Docs', href: '/404' },
-            { label: 'FAQs', href: '/404' },
+            { label: 'FAQs', href: '/faq' },
         ],
     },
     {
@@ -99,9 +99,9 @@ function Footer() {
                     <span>No copyrights; </span>
                     <a href="https://copyleft.org" target="_blank" rel="noreferrer">Copyleft</a>
                     <span> <FaCopyright className="cpyrght"/> 2025, Process Feedback, LLC <GoDotFill/></span>
-                    <a href="../pages/PrivacyPolicy.jsx">Privacy Policy</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
                     <span><GoDotFill/></span>
-                    <a href="../pages/TermsOfService.jsx">Terms of Use</a>
+                    <a href="/terms">Terms of Use</a>
                 </div>
                 <div className="footer-social">
                     <a href="https://www.facebook.com/processfeedback/" target="_blank" rel="noreferrer" className="social-icon facebook">
