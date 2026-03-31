@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import FAQPage from "./pages/FAQPage";
+import Attribution from "./pages/Attribution";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
              <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
              <Route path="/terms" element={<TermsOfService/>} />
              <Route path="/faq" element={<FAQPage/>} />
+             <Route path="/attribution" element={<Attribution/>} />
          </Routes>
          <Footer />
          </Router>

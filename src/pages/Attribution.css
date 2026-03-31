@@ -1,0 +1,66 @@
+.attribution-page {
+    min-height: 60vh;
+}
+
+.attribution-hero {
+    background-color: #e7f0fd;
+    padding: 80px 16px 40px 16px;
+    text-align: center;
+}
+
+.attribution-hero h1 {
+    opacity: 0.8;
+    font-size: 48px;
+    color: #213547;
+    font-family: var(--font-main);
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    line-height: 48px;
+}
+
+.attribution-content {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.attribution-content p {
+    font-family: var(--font-main);
+    color: #213547;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.attribution-content a {
+    color: #027dff;
+    text-decoration: underline;
+}
+
+.attribution-content a:hover {
+    opacity: 0.8;
+}
+
+.attribution-links {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.attribution-links h2 {
+    font-family: var(--font-main);
+    color: #003066;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.attribution-links p {
+    margin-bottom: 8px;
+}
+
+@media print {
+    .attribution-hero {
+        background: #f0f7ff;
+    }
+}

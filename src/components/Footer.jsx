@@ -122,6 +122,8 @@ function Footer() {
             <div className="footer-attribution">
                 Content from <a href="https://www.processfeedback.org" target="_blank" rel="noreferrer">
                 www.processfeedback.org</a>
+                {' '} | {' '}
+                <a href="/attribution">Content Attribution</a>
             </div>
         </footer>
     );
