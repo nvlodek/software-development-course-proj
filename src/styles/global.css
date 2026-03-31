@@ -17,3 +17,47 @@ html, body {
     overflow-x: hidden;
     max-width: 100%;
 }
+
+@media print {
+    /* Hide navigation and footer */
+    .navbar,
+    .hamburger,
+    .footer-social,
+    .footer-bottom {
+        display: none;
+    }
+
+    /* Make sure text is readable */
+    body {
+        font-size: 12pt;
+        color: black;
+        background: white;
+    }
+
+    /* Remove backgrounds and shadows */
+    * {
+        background: white !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    /* Make links show their URL */
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+    }
+
+    /* Avoid breaking content mid-page */
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+
+    p, li {
+        page-break-inside: avoid;
+    }
+
+    /* Remove padding added for fixed navbar */
+    body {
+        padding-top: 0 !important;
+    }
+}
