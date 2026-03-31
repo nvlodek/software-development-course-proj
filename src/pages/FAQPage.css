@@ -108,3 +108,53 @@
         font-size: 14px;
     }
 }
+
+@media print {
+    /* Remove background + spacing issues */
+    .faqpage-landscape {
+        background: white;
+        padding: 0;
+    }
+
+    /* Remove card styling */
+    .faqpage-expandable {
+        box-shadow: none;
+        border: none;
+    }
+
+    /* FORCE ALL CONTENT OPEN */
+    .faqpage-expandable__content-wrapper {
+        display: block !important;
+        grid-template-rows: none !important;
+    }
+
+    .faqpage-expandable__content {
+        display: block !important;
+        overflow: visible !important;
+        padding: 8px 0 !important;
+    }
+
+    /* Hide dropdown arrow */
+    .faqpage-expandable__icon {
+        display: none;
+    }
+
+    /* Remove hover effects */
+    .faqpage-expandable__title-bar:hover {
+        background: none;
+    }
+
+    /* Improve readability */
+    .faqpage-header {
+        font-size: 20px;
+    }
+
+    .faqpage-expandable__title {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .faqpage-p {
+        font-size: 12px;
+    }
+}
