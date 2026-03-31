@@ -456,11 +456,11 @@ function PrivacyPolicy() {
                     By choosing to use PF's services, you hereby acknowledge and accept PF's practices as described in
                     this Privacy Policy. Any dispute over privacy between you and PF is subject to the provisions of this
                     notice and to PF's Terms of Service Agreement, which is hereby incorporated by reference. You can
-                    review the Terms of Service Agreement at <a href="https://processfeedback.org/terms/" target="blank" rel="noreferrer" className="link">processfeedback.org/terms</a>.
+                    review the Terms of Service Agreement at <a href="./TermsOfService.jsx" target="blank" rel="noreferrer" className="link">processfeedback.org/terms</a>.
                 </p>
                 <div className="policy-buttons">
                     <button className="btn-primary">
-                        <a href="https://processfeedback.org/terms/" className="btn-link" target="blank" rel="noreferrer">
+                        <a href="./TermsOfService.jsx" className="btn-link" target="blank" rel="noreferrer">
                             Read: Terms and Conditions </a>
                     </button>
                     <button className="btn-primary">

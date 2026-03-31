@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
              <Route path="/contact" element={<Contact/>} />
              <Route path="*" element={<NotFound/>} />
              <Route path="/pages/PrivacyPolicy.jsx" element={<PrivacyPolicy/>} />
+             <Route path="/pages/TermsOfService.jsx" element={<TermsOfService/>} />
          </Routes>
          <Footer />
          </Router>

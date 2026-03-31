@@ -1,32 +1,35 @@
 /* Header section */
-.PrivacyPolicy-header {
+.TermsOfService-header {
     background-image: linear-gradient(in oklab, rgb(149, 207, 250) 0%, rgb(231, 245, 254) 100%);
     text-align: center;
     padding: 60px 40px;
-    text-decoration: none;
 }
 
-.PrivacyPolicy-header .header {
+/* Main title */
+.TermsOfService-header .header {
     font-size: 48px;
     font-weight: 700;
     color: var(--color-text);
     margin-bottom: 12px;
 }
 
-.PrivacyPolicy-header .title {
+/* Subtitle */
+.TermsOfService-header .title {
     font-size: 18px;
     font-weight: 400;
     color: var(--color-text);
     margin-bottom: 16px;
 }
 
-.PrivacyPolicy-header .date {
+/* ✅ ALWAYS visible (no animation applied) */
+.TermsOfService-header .termsdate {
     font-size: 16px;
     color: rgb(100, 116, 139);
 }
 
+
 /* Key points card */
-.key-points {
+.TermsKeyPoints {
     max-width: 1000px;
     margin: 40px auto;
     border-radius: 12px;
@@ -35,98 +38,80 @@
     background-color: rgb(239, 246, 255);
 }
 
-.PrivacyPolicy {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 24px;
-    background-color: white;
-}
-.key-points .header-title {
+.TOS-header-title {
     font-size: 18px;
     font-weight: 700;
     color: var(--color-text);
     margin-bottom: 16px;
 }
 
-.key-points-list {
+.Terms-kplist {
     padding-left: 24px;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.key-item {
+.keypoint {
     font-size: 15px;
     line-height: 1.7;
     color: var(--color-text);
 }
 
-/* Main content sections */
-.privacy-policy-sections {
+
+/* Main content */
+.Terms-sections {
     max-width: 1000px;
     margin: 0 auto 60px auto;
     padding: 0 40px;
 }
 
-.section-header {
+/* Section headers */
+.termsHeader {
     font-size: 28px;
     font-weight: 700;
     color: var(--color-text);
     margin: 40px 0 16px 0;
 }
 
-.subsection-header {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--color-text);
-    margin: 24px 0 12px 0;
-}
-
-.subsection-description {
+/* Paragraphs */
+.Terms-paragraph {
     font-size: 15px;
     line-height: 1.8;
     color: var(--color-text);
     margin-bottom: 16px;
 }
 
-.subsection-list {
-    padding-left: 24px;
-    margin: 16px 0;
-    flex-direction: column;
-    gap: 12px;
-    list-style: disc;
-    color: rgb(148, 163, 184); /* gray bullet color */
-}
-
-.subsection-item {
+/* Fix lowercase class inconsistency */
+.terms-paragraph {
     font-size: 15px;
-    font-family: var(--font-main);
-    line-height: 1.7;
+    line-height: 1.8;
     color: var(--color-text);
+    margin-bottom: 16px;
 }
 
-.subsection-item::marker {
-    color: lightgray;
-}
 
-.link {
+/* Links */
+.terms-link {
     font-weight: bold;
     text-decoration: underline;
     color: var(--color-text);
-    font-family: var(--font-main);
 }
 
-.policy-buttons {
+
+/* Buttons */
+.terms-buttons {
     display: flex;
     justify-content: center;
-    gap: 24px; /* space between buttons */
+    gap: 24px;
+    margin-bottom: 60px;
 }
 
-.btn-link {
+.btn-link-terms {
     text-decoration: none;
 }
 
-.PrivacyPolicy .btn-primary {
+.btn-term-primary {
     background: white;
     font-size: 17px;
     font-weight: 600;
@@ -134,7 +119,7 @@
     padding: 14px 32px;
     border-radius: 30px;
 
-    border: 2px solid #2f6fed;   /* <-- important */
+    border: 2px solid #2f6fed;
     color: #2f6fed;
 
     text-align: center;
@@ -143,20 +128,24 @@
     transition: all 0.2s ease;
 }
 
-/* hover effect (lift + slightly stronger shadow) */
-.PrivacyPolicy .btn-primary:hover {
-    transform: translateY(2px);   /* <-- lift instead of drop */
+.btn-term-primary:hover {
+    transform: translateY(2px);
     box-shadow: 0 6px 16px rgba(47, 111, 237, 0.25);
 }
 
-/* initial state (only for animated elements) */
+
+/* ========================= */
+/* ANIMATION (IMPORTANT) */
+/* ========================= */
+
+/* Initial hidden state ONLY for header + title */
 .header.hidden,
 .title.hidden {
     opacity: 0;
     transform: translateY(20px);
 }
 
-/* animated state */
+/* Fade-in animation */
 .header.fade-in,
 .title.fade-in {
     opacity: 1;
@@ -164,26 +153,25 @@
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+/* 🚫 DO NOT include .termsdate here → stays visible */
+
+
 /* Mobile */
 @media (max-width: 768px) {
-    .PrivacyPolicy-header .header {
+    .TermsOfService-header .header {
         font-size: 32px;
     }
 
-    .key-points {
+    .TermsKeyPoints {
         margin: 24px 16px;
         padding: 24px;
     }
 
-    .privacy-policy-sections {
+    .Terms-sections {
         padding: 0 16px;
     }
 
-    .section-header {
+    .termsHeader {
         font-size: 22px;
-    }
-
-    .subsection-header {
-        font-size: 17px;
     }
 }

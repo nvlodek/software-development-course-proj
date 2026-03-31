@@ -101,7 +101,7 @@ function Footer() {
                     <span> <FaCopyright className="cpyrght"/> 2025, Process Feedback, LLC <GoDotFill/></span>
                     <a href="../pages/PrivacyPolicy.jsx">Privacy Policy</a>
                     <span><GoDotFill/></span>
-                    <a href="/404">Terms of Use</a>
+                    <a href="../pages/TermsOfService.jsx">Terms of Use</a>
                 </div>
                 <div className="footer-social">
                     <a href="https://www.facebook.com/processfeedback/" target="_blank" rel="noreferrer" className="social-icon facebook">
