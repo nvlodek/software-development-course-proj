@@ -128,7 +128,7 @@ function FAQ () {
                             <p className="faqp">
                                 It can be, but you have options. You can have students do much of the reviewing themselves
                                 by assigning short reflection assignments. If you're looking for examples, check out our <a href='/404' className="FAQ_link">Reflection Prompts</a>
-                                to guide their self-review. You can also have students submit their writing process data ZIP files so you can load them all
+                                 to guide their self-review. You can also have students submit their writing process data ZIP files so you can load them all
                                 up in the <a href="/404" className="FAQ_link">teacher dashboard</a> and explore them at once.
                             </p>
                         </div>
