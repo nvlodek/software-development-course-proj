@@ -5,8 +5,8 @@
     font-family: Inter, sans-serif;
     border-radius: 8px;
     transition: border-color 0.2s ease;
-    margin-bottom: 24px;
-    border: 1px solid rgba(33, 53, 71, 0.15);
+    margin-bottom: 14px;
+    border: none;
     padding: 4px;
 }
 
@@ -17,6 +17,11 @@
 .expandable__icon {
     transform: rotate(0deg);
     transition: transform 0.3s ease;
+    font-size: 24px;
+}
+
+.expandable:not(.active) .expandable__title-bar:hover {
+    border-color: #3b82f6;
 }
 
 .expandable--open .expandable__content-wrapper {
@@ -37,15 +42,12 @@
     color: rgb(33, 53, 71);
     border-radius: 8px;
     cursor: pointer;
+    border: 1px solid #ddd;
 }
 
 .expandable__title-bar:hover {
     background-color: rgb(240, 245, 255);
     border-color: blue;
-}
-
-.expandable:hover {
-    border-color: #1a73e8;
 }
 
 .expandable:focus-within {
