@@ -58,14 +58,14 @@ function Hero() {
                 {/* Bullet Points */}
                 <div className="hero-bullets">
                     <div className="bullet-column">
-                        <p><FaArrowRight className="arrow"/> See copy-paste events, editing time, etc.</p>
-                        <p><FaArrowRight className="arrow"/> Encourage students to think and reflect</p>
-                        <p><FaArrowRight className="arrow"/> Identify why students struggle to write</p>
+                        <p className='bullet-p'><FaArrowRight className="arrow"/> See copy-paste events, editing time, etc.</p>
+                        <p className='bullet-p'><FaArrowRight className="arrow"/> Encourage students to think and reflect</p>
+                        <p className='bullet-p'><FaArrowRight className="arrow"/> Identify why students struggle to write</p>
                     </div>
                     <div className="bullet-column">
-                        <p><FaArrowRight className="arrow"/> Prevent plagiarism through transparency</p>
-                        <p><FaArrowRight className="arrow"/> Promote academic integrity meaningfully</p>
-                        <p><FaArrowRight className="arrow"/> Explore how students use AI</p>
+                        <p className='bullet-p'><FaArrowRight className="arrow"/> Prevent plagiarism through transparency</p>
+                        <p className='bullet-p'><FaArrowRight className="arrow"/> Promote academic integrity meaningfully</p>
+                        <p className='bullet-p'><FaArrowRight className="arrow"/> Explore how students use AI</p>
                     </div>
                 </div>
             </div>
