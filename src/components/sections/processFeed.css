@@ -36,10 +36,11 @@
 .secondp {
     text-align: left;
     margin: 20px auto;
-    line-height: 1.6;
+    line-height: 28px;
     font-size: 16px;
-    color: #2c3e50;
+    color: rgb(33, 53, 71);
     max-width: 750px;
+    font-family: Inter, "Noto Sans", "Helvetica Neue", ui-sans-serif, system-ui;
 }
 
 .quote-section {
@@ -64,7 +65,7 @@
 }
 
 .quote-text.highlight-text {
-    animation: swipe 1.2s ease forwards;
+    animation: swipe 2.5s ease forwards;
 }
 
 @keyframes swipe {

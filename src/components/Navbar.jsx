@@ -64,7 +64,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <a href="/" className="navbar-logo">
-                <img src={logo} alt="logo" className="navbar-logo-img" />
+                <img src={logo} alt="logo" className="navbar-logo-img fade-in" />
                 <div className="navbar-logo-subtitle">
                     Every Student's Work Has a Story
                 </div>

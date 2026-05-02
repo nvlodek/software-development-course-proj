@@ -42,7 +42,12 @@ function StudentTools() {
                             <li>No account needed</li>
                             <li>No monitoring</li>
                         </ul>
-                        <div className="card-btn">Start Writing</div>
+                        <div className="card-btn">
+                            Start Writing
+                            <span className="btn-icon">
+                                <ion-icon name="open-outline"></ion-icon>
+                            </span>
+                        </div>
                     </div>
 
                     <div className="card">
@@ -51,7 +56,12 @@ function StudentTools() {
                             <li>AI explains errors</li>
                             <li>Supports Python, Java, C++, and more</li>
                         </ul>
-                        <div className="card-btn">Start Coding</div>
+                        <div className="card-btn">
+                            Start Coding
+                            <span className="btn-icon">
+                                <ion-icon name="open-outline"></ion-icon>
+                            </span>
+                        </div>
                     </div>
 
                     <div className="card">
@@ -60,7 +70,12 @@ function StudentTools() {
                             <li>Easy to install</li>
                             <li>No need to preinstall</li>
                         </ul>
-                        <div className="card-btn">Install</div>
+                        <div className="card-btn">
+                            Install
+                            <span className="btn-icon">
+                                <ion-icon name="open-outline"></ion-icon>
+                            </span>
+                        </div>
                     </div>
 
                     <div className="card">
@@ -69,7 +84,12 @@ function StudentTools() {
                             <li>Runs locally</li>
                             <li>Student-centered</li>
                         </ul>
-                        <div className="card-btn">Install</div>
+                        <div className="card-btn">
+                            Install
+                            <span className="btn-icon">
+                                <ion-icon name="open-outline"></ion-icon>
+                            </span>
+                        </div>
                     </div>
 
                 </div>

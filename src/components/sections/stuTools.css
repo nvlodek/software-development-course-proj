@@ -37,7 +37,7 @@
     padding: 35px 25px;
     border-radius: 28px;
 
-    background: linear-gradient(180deg, #c7d6ea 0%, #9bb8d8 100%);
+    background: linear-gradient(180deg, #c3d4ea 0%, #9fb8d6 100%);
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 
     display: flex;
@@ -50,7 +50,8 @@
 /* hover */
 .stuTools .card:hover {
     transform: rotate(-2deg);
-    background: linear-gradient(180deg, #b7cbe4 0%, #8fb0d4 100%);
+    border: 2px solid #1a73e8;
+    background: linear-gradient(180deg, #b4c9e6 0%, #7fa6cf 100%);
 }
 
 /* title */
@@ -90,15 +91,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px; /* space between text + icon */
 
     padding: 12px 20px;
     border-radius: 999px;
 
     border: 1px solid rgba(30, 80, 140, 0.25);
     background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px); /* 🔥 glass effect */
 
     color: #1f4f8b;
     font-size: 15px;
+    font-weight: 500;
 
     cursor: pointer;
     transition: all 0.2s ease;
