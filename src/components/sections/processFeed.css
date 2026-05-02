@@ -2,6 +2,13 @@
     text-align: right;
 }
 
+.main-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
 .centered_header {
     font-size: 24px;
     font-weight: 700;
@@ -15,18 +22,14 @@
     display: flex;
     justify-content: center;
     padding: 60px 20px;
+    overflow: hidden;
 }
 
 .processFeed-wrapper {
     text-align: center;
     width: 100%;
     max-width: 900px;
-}
-
-.main_img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
+    overflow: hidden;
 }
 
 .firstp,
@@ -54,11 +57,8 @@
     line-height: 1.6;
     display: block;
     margin-bottom: 16px;
-    /* Step 1: define the gradient */
     background-image: linear-gradient(to right, transparent 0%, #f2e8e3 20%, #f2e8e3 80%, transparent 100%);
-    /* Step 2: size the band narrower than the element */
     background-size: 60% 100%;
-    /* Step 3: start it off the left edge */
     background-position: -60% center;
     background-repeat: no-repeat;
 }
@@ -144,7 +144,36 @@
     transition: all 0.6s ease;
 }
 
-.fade.show{
+.fade.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .processFeed {
+        padding: 40px 16px;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+
+    .quote-section {
+        padding: 40px 24px;
+        margin: 40px auto;
+    }
+
+    .quote-text {
+        font-size: 16px;
+    }
+
+    .firstp,
+    .secondp {
+        font-size: 15px;
+    }
+
+    .centered_header {
+        font-size: 20px;
+    }
 }
