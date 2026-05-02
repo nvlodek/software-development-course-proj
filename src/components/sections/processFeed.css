@@ -11,6 +11,7 @@
 
 .centered_header {
     font-size: 24px;
+    line-height: 31px;
     font-weight: 700;
     color: rgb(128, 40, 0);
     display: block;
@@ -41,7 +42,10 @@
     color: rgb(33, 53, 71);
     max-width: 750px;
     font-family: Inter, "Noto Sans", "Helvetica Neue", ui-sans-serif, system-ui;
+    font-weight: 400;
 }
+
+
 
 .quote-section {
     position: relative;
@@ -53,15 +57,17 @@
 }
 
 .quote-text {
-    font-size: 20px;
-    color: #2c3e50;
-    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(33, 53, 71);
     display: block;
     margin-bottom: 16px;
     background-image: linear-gradient(to right, transparent 0%, #f2e8e3 20%, #f2e8e3 80%, transparent 100%);
     background-size: 60% 100%;
     background-position: -60% center;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 .quote-text.highlight-text {
@@ -84,9 +90,10 @@
 
 .quote-mark {
     position: absolute;
-    font-size: 60px;
+    font-size: 120px;
     color: #8b2e00;
     line-height: 1;
+    font-family:Georgia, serif;
 }
 
 .quote-mark.top {
@@ -115,27 +122,30 @@
 }
 
 .quote-mark.bottom {
-    bottom: -15px;
+    bottom: -55px;
+    transform: scaleY(1);
     right: -5px;
 }
 
 .quote-mark.bottom::after {
     content: "";
     position: absolute;
-    bottom: 28px;
-    left: -65px;
+    top: 28px;
+    right: 55px; /* 🔥 changed from left */
     width: 60px;
     height: 2px;
+    bottom: 85px;
     background: #8b2e00;
 }
 
 .quote-mark.bottom::before {
     content: "";
     position: absolute;
-    bottom: 55px;
-    right: 10px;
+    top: -35px;
+    right: 10px; /* 🔥 changed from left */
     width: 2px;
     height: 35px;
+    bottom: 90px;
     background: #8b2e00;
 }
 
@@ -163,6 +173,7 @@
     .quote-section {
         padding: 40px 24px;
         margin: 40px auto;
+        border: transparent;
     }
 
     .quote-text {
