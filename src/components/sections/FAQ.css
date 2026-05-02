@@ -61,9 +61,11 @@
 }
 
 .expandable__title {
-    font-weight: bold;
-    font-size: 15px;
-    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Inter, "Noto Sans", "Helvetica Neue", ui-sans-serif, system-ui;
+    color: rgb(33, 53, 71);
+    line-height: 24px;
 }
 
 .expandable__content {
@@ -112,16 +114,19 @@
 }
 
 .FAQ_link {
-    color: var(--color-btn-primary);
+    color: black;
+    font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
 }
 
 .faqp {
-    font-size: 15px;
-    font-family: var(--font-main);
-    line-height: 1.6;
-    color: var(--color-text);
+    font-weight: 400;
+    max-width: 530px;
+    font-size: 16px;
+    font-family: Inter, "Noto Sans", "Helvetica Neue", ui-sans-serif, system-ui;
+    line-height: 28px;
+    color: oklch(0.373 0.034 259.733);
     margin-bottom: 12px;
 }
 
