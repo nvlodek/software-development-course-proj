@@ -127,9 +127,9 @@ function FAQ () {
                         <div className="expandable__content">
                             <p className="faqp">
                                 It can be, but you have options. You can have students do much of the reviewing themselves
-                                by assigning short reflection assignments. If you're looking for examples, check out our <a href='/404' className="FAQ_link">Reflection Prompts</a>
+                                by assigning short reflection assignments. If you're looking for examples, check out our <a href='/404' className="FAQ_link">Reflection Prompts</a>{" "}
                                  to guide their self-review. You can also have students submit their writing process data ZIP files so you can load them all
-                                up in the <a href="/404" className="FAQ_link">teacher dashboard</a> and explore them at once.
+                                up in the <a href="/404" className="FAQ_link">teacher dashboard</a>{" "} and explore them at once.
                             </p>
                         </div>
                     </div>
@@ -153,7 +153,7 @@ function FAQ () {
                                 Ideally, you'll encourage students to review their own work and complete
                                 reflection assignments so they stay in control of their learning. It's also
                                 important to let them know in advance that you'll be asking them to share
-                                their writing process. For more details, please see our <a href='/404' className="FAQ_link">Teacher Guides</a> for
+                                their writing process. For more details, please see our <a href='/404' className="FAQ_link">Teacher Guides</a>{" "} for
                                 an example announcement you can share with your class.
                             </p>
                         </div>
@@ -181,9 +181,9 @@ function FAQ () {
                             </p>
                             <p className="faqp">
                                 By contrast, Process Feedback can discourage plagiarism at the outset,
-                                especially if students are asked to <a className="FAQ_link" href='/404'>reflect on their process</a>
+                                especially if students are asked to <a className="FAQ_link" href='/404'>reflect on their process</a>{" "}
                                 and see how their work evolves over time. Also, you can refer to our guide on
-                                <a className="FAQ_link" href="/404"> identifying AI-assisted writing patterns.</a>
+                                <a className="FAQ_link" href="/404">{" "} identifying AI-assisted writing patterns.</a>
                             </p>
                         </div>
                     </div>
@@ -253,7 +253,7 @@ function FAQ () {
                         <div className="expandable__content">
                             <p className="faqp">
                                 Process Feedback has a live chat feature. Sometimes our support team
-                                may not be available right away. You are welcome to <a href='/404' className='FAQ_link'>email us anytime.</a>
+                                may not be available right away. You are welcome to <a href='/404' className='FAQ_link'>{" "} email us anytime.</a>
                             </p>
                         </div>
                     </div>
