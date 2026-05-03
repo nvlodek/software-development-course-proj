@@ -1,5 +1,5 @@
 .faqpage-landscape {
-    background-color: rgb(237, 241, 250);
+    background-color: var(--color-bg-secondary); /* changed */
     padding: 40px 20px 60px 20px;
 }
 
@@ -27,7 +27,7 @@
 
 .faqpage-expandable {
     width: 100%;
-    background-color: white;
+    background-color: var(--color-bg-card); /* changed */
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
@@ -37,7 +37,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px 20px;
-    background-color: white;
+    background-color: var(--color-bg-card); /* changed */
     border-radius: 8px;
     cursor: pointer;
     color: var(--color-text);
@@ -45,7 +45,7 @@
 }
 
 .faqpage-expandable__title-bar:hover {
-    background-color: rgb(219, 234, 254);
+    background-color: var(--color-section-blue); /* changed */
 }
 
 .faqpage-expandable__title {
@@ -74,7 +74,7 @@
     min-height: 0;
     overflow: hidden;
     padding: 0 20px;
-    background-color: white;
+    background-color: var(--color-bg-card); /* changed */
     border-radius: 0 0 8px 8px;
     font-size: 14px;
     line-height: 1.6;
@@ -110,19 +110,16 @@
 }
 
 @media print {
-    /* Remove background + spacing issues */
     .faqpage-landscape {
         background: white;
         padding: 0;
     }
 
-    /* Remove card styling */
     .faqpage-expandable {
         box-shadow: none;
         border: none;
     }
 
-    /* FORCE ALL CONTENT OPEN */
     .faqpage-expandable__content-wrapper {
         display: block !important;
         grid-template-rows: none !important;
@@ -134,17 +131,14 @@
         padding: 8px 0 !important;
     }
 
-    /* Hide dropdown arrow */
     .faqpage-expandable__icon {
         display: none;
     }
 
-    /* Remove hover effects */
     .faqpage-expandable__title-bar:hover {
         background: none;
     }
 
-    /* Improve readability */
     .faqpage-header {
         font-size: 20px;
     }

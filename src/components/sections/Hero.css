@@ -1,5 +1,5 @@
 .hero {
-    background-image: linear-gradient(in oklab, rgb(149, 207, 250) 0%, rgb(231, 245, 254) 100%);
+    background-image: linear-gradient(in oklab, var(--color-section-blue) 0%, var(--color-bg-secondary) 100%); /* changed */
     min-height: unset;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@
 .hero-title {
     font-weight: 700;
     font-size: 56px;
-    color: rgb(0, 63, 129);
+    color: var(--color-hero-title); /* changed */
     line-height: 72px;
     font-family: Inter, "Noto Sans", "Helvetica Neue", ui-sans-serif, system-ui;
 }
@@ -40,7 +40,7 @@
     font-family: Inter, "Noto Sans", "Helvetica Neue", ui-sans-serif, system-ui;
     font-size: 16px;
     max-width: 700px;
-    color: rgb(33, 53, 71);
+    color: var(--color-text); /* changed */
     box-sizing: border-box;
     justify-content: center;
     line-height: 24px;
@@ -81,7 +81,7 @@
     font-weight: 400;
     font-family: Inter, "Noto Sans", "Helvetica Neue", ui-sans-serif, system-ui;
     font-size: 16px;
-    color: rgb(0,0,0);
+    color: var(--color-text); /* changed */
     line-height: 24px;
 }
 
@@ -125,13 +125,13 @@
 }
 
 .bullet-column p {
-    color: rgb(0, 0, 0);
+    color: var(--color-text); /* changed */
     font-size: 16px;
     font-family: var(--font-main);
 }
 
 .p1 {
-    color: oklch(0.546 0.245 262.881);
+    color: var(--color-link); /* changed */
     text-align: center;
     font-size: 16px;
     font-weight: 400;

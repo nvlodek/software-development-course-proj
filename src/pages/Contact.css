@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e7f0fd;
+    background-color: var(--color-section-blue); /* changed */
 }
 @media (min-width: 768px) {
     .contact-hero {
@@ -42,7 +42,7 @@
     font-size: 48px;
     max-width: 896px;
     margin: 0 auto;
-    color: #213547;
+    color: var(--color-text); /* changed */
     font-family: var(--font-main);
     font-weight: 400;
     letter-spacing: 0.16px;
@@ -52,7 +52,7 @@
 .contact-hero-content p {
     opacity: 0.8;
     margin-top: 16px;
-    color: #213547;
+    color: var(--color-text); /* changed */
     font-family: var(--font-main);
     font-size: 16px;
     letter-spacing: 0.16px;
@@ -68,7 +68,7 @@
 
 .contact-section h2 {
     font-weight: 700;
-    color: #003066;
+    color: var(--color-heading); /* changed */
     font-family: var(--font-main);
     font-size: 1.75rem;
     margin-bottom: 8px;
@@ -94,7 +94,7 @@
 
 /* ========== SEND US AN EMAIL SECTION ========== */
 .email-section {
-    background-color: #ffffff;
+    background-color: var(--color-bg); /* changed */
 }
 
 .email-section .email-text {
@@ -109,7 +109,7 @@
 }
 
 .email-section .email-text a {
-    color: var(--color-btn-primary, #027dff);
+    color: var(--color-link); /* changed */
     text-decoration: underline;
 }
 
@@ -125,9 +125,9 @@
     display: inline-block;
     margin: 16px;
     padding: 10px 24px;
-    background-color: #ffffff;
-    border: 1px solid #003066;
-    color: #003066;
+    background-color: var(--color-bg); /* changed */
+    border: 1px solid var(--color-heading); /* changed */
+    color: var(--color-heading); /* changed */
     border-radius: 9999px;
     font-family: var(--font-main);
     font-weight: 600;
@@ -138,7 +138,7 @@
 }
 
 .copy-email-btn:hover {
-    background-color: #f0f7ff;
+    background-color: var(--color-bg-secondary); /* changed */
 }
 
 .copy-email-btn:disabled {
@@ -196,7 +196,7 @@
     width: 260px;
     height: 260px;
     border-radius: 12px;
-    background: linear-gradient(135deg, #dbeafe, #eff6ff, #dbeafe);
+    background: linear-gradient(135deg, var(--color-bg-secondary), var(--color-bg), var(--color-bg-secondary)); /* changed */
     background-size: 200% 200%;
     animation: placeholderShimmer 3s ease-in-out infinite;
     display: flex;
@@ -216,7 +216,7 @@
 
 /* ========== SEND US A MESSAGE / FORM SECTION ========== */
 .message-section {
-    background-color: #eff6ff;
+    background-color: var(--color-bg-secondary); /* changed */
 }
 
 .message-section p.form-description {
@@ -251,8 +251,8 @@
 /* Form Card */
 .contact-form-card {
     width: 100%;
-    background: linear-gradient(to bottom right, #eff6ff, #ffffff, #eff6ff);
-    border: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom right, var(--color-bg-secondary), var(--color-bg-card), var(--color-bg-secondary)); /* changed */
+    border: 1px solid var(--color-border); /* changed */
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     padding: 16px;
@@ -295,7 +295,7 @@
 
 .form-row label {
     font-weight: 500;
-    color: #374151;
+    color: var(--color-text); /* changed */
     margin-bottom: 8px;
     font-family: var(--font-main);
     font-size: 15px;
@@ -307,11 +307,11 @@
 
 .form-row input,
 .form-row textarea {
-    border: 2px solid #e5e7eb;
+    border: 2px solid var(--color-border); /* changed */
     padding: 12px 16px;
     border-radius: 12px;
     outline: none;
-    background-color: #ffffff;
+    background-color: var(--color-bg-card); /* changed */
     font-family: var(--font-main);
     font-size: 15px;
     color: var(--color-text);
@@ -320,7 +320,7 @@
 
 .form-row input:hover,
 .form-row textarea:hover {
-    border-color: #d1d5db;
+    border-color: var(--color-border); /* changed */
 }
 
 .form-row input:focus,
@@ -340,7 +340,7 @@
 
 .form-row input:read-only,
 .form-row textarea:read-only {
-    background-color: #f3f4f6;
+    background-color: var(--color-bg-secondary); /* changed */
     cursor: not-allowed;
 }
 
@@ -362,7 +362,7 @@
     gap: 8px;
     margin-top: 12px;
     padding: 12px 32px;
-    background-color: #003066;
+    background-color: var(--color-heading); /* changed */
     color: #f2f8ff;
     border: none;
     border-radius: 9999px;
@@ -375,7 +375,7 @@
 }
 
 .contact-submit-btn:hover {
-    background-color: #004a99;
+    background-color: var(--color-btn-primary); /* changed */
 }
 
 .contact-submit-btn:disabled {
@@ -412,23 +412,23 @@
 }
 
 .form-status.info {
-    background-color: #eff6ff;
-    color: #1e40af;
-    border: 1px solid #bfdbfe;
+    background-color: var(--color-bg-secondary); /* changed */
+    color: var(--color-link); /* changed */
+    border: 1px solid var(--color-border); /* changed */
 }
 
 /* ========== SCHEDULE MEETING SECTION ========== */
 .meeting-section {
-    background-color: #ffffff;
+    background-color: var(--color-bg); /* changed */
 }
 
 .schedule-btn {
     display: inline-block;
     margin: 16px;
     padding: 10px 24px;
-    background-color: #ffffff;
-    border: 1px solid #003066;
-    color: #003066;
+    background-color: var(--color-bg); /* changed */
+    border: 1px solid var(--color-heading); /* changed */
+    color: var(--color-heading); /* changed */
     border-radius: 9999px;
     font-family: var(--font-main);
     font-weight: 600;
@@ -439,12 +439,12 @@
 }
 
 .schedule-btn:hover {
-    background-color: #f0f7ff;
+    background-color: var(--color-bg-secondary); /* changed */
 }
 
 /* ========== CAREERS SECTION ========== */
 .careers-section {
-    background-color: #D9EBFF;
+    background-color: var(--color-bg-secondary); /* changed */
 }
 
 .careers-section .contact-section-inner {
@@ -465,12 +465,12 @@
 
 /* ========== FOLLOW US SECTION ========== */
 .follow-section {
-    background-color: #ffffff;
+    background-color: var(--color-bg); /* changed */
     padding: 32px 16px;
 }
 
 .follow-card {
-    background-image: linear-gradient(to bottom, #B2D6FF, #F2F8FF);
+    background-image: linear-gradient(to bottom, var(--color-section-blue), var(--color-bg-secondary)); /* changed */
     border-radius: 16px;
     padding: 20px;
     max-width: 1152px;
@@ -557,7 +557,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #2563eb;
+    background-color: var(--color-btn-primary); /* changed */
     color: #e5e7eb;
     text-decoration: none;
     transition: opacity 0.2s ease;

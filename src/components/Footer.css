@@ -33,7 +33,7 @@
 
 .footer-column a:hover {
     text-decoration: underline;
-    color: #1a73e8;
+    color: var(--color-link); /* changed */
 }
 
 /* Headings */
@@ -95,7 +95,7 @@
     height: 28px;
     border-radius: 50%;
     color: white;
-    background-color: #2d6cdf;
+    background-color: var(--color-btn-primary); /* changed */
     font-size: 14px;
     text-decoration: none;
 }

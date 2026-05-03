@@ -1,11 +1,10 @@
 /* Header section */
 .TermsOfService-header {
-    background-image: linear-gradient(in oklab, rgb(149, 207, 250) 0%, rgb(231, 245, 254) 100%);
+    background-image: linear-gradient(in oklab, var(--color-section-blue) 0%, var(--color-bg-secondary) 100%); /* changed */
     text-align: center;
     padding: 60px 40px;
 }
 
-/* Main title */
 .TermsOfService-header .header {
     font-size: 48px;
     font-weight: 700;
@@ -13,7 +12,6 @@
     margin-bottom: 12px;
 }
 
-/* Subtitle */
 .TermsOfService-header .title {
     font-size: 18px;
     font-weight: 400;
@@ -21,12 +19,11 @@
     margin-bottom: 16px;
 }
 
-/* ✅ ALWAYS visible (no animation applied) */
 .TermsOfService-header .termsdate {
     font-size: 16px;
-    color: rgb(100, 116, 139);
+    color: var(--color-text); /* changed */
+    opacity: 0.7; /* changed */
 }
-
 
 /* Key points card */
 .TermsKeyPoints {
@@ -35,7 +32,7 @@
     border-radius: 12px;
     padding: 32px 40px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-    background-color: rgb(239, 246, 255);
+    background-color: var(--color-bg-secondary); /* changed */
 }
 
 .TOS-header-title {
@@ -58,7 +55,6 @@
     color: var(--color-text);
 }
 
-
 /* Main content */
 .Terms-sections {
     max-width: 1000px;
@@ -66,7 +62,6 @@
     padding: 0 40px;
 }
 
-/* Section headers */
 .termsHeader {
     font-size: 28px;
     font-weight: 700;
@@ -74,7 +69,6 @@
     margin: 40px 0 16px 0;
 }
 
-/* Paragraphs */
 .Terms-paragraph {
     font-size: 15px;
     line-height: 1.8;
@@ -82,7 +76,6 @@
     margin-bottom: 16px;
 }
 
-/* Fix lowercase class inconsistency */
 .terms-paragraph {
     font-size: 15px;
     line-height: 1.8;
@@ -90,14 +83,11 @@
     margin-bottom: 16px;
 }
 
-
-/* Links */
 .terms-link {
     font-weight: bold;
     text-decoration: underline;
-    color: var(--color-text);
+    color: var(--color-link); /* changed */
 }
-
 
 /* Buttons */
 .terms-buttons {
@@ -112,19 +102,15 @@
 }
 
 .btn-term-primary {
-    background: white;
+    background: var(--color-bg); /* changed */
     font-size: 17px;
     font-weight: 600;
-
     padding: 14px 32px;
     border-radius: 30px;
-
-    border: 2px solid #2f6fed;
-    color: #2f6fed;
-
+    border: 2px solid var(--color-btn-primary); /* changed */
+    color: var(--color-btn-primary); /* changed */
     text-align: center;
     cursor: pointer;
-
     transition: all 0.2s ease;
 }
 
@@ -133,28 +119,19 @@
     box-shadow: 0 6px 16px rgba(47, 111, 237, 0.25);
 }
 
-
-/* ========================= */
-/* ANIMATION (IMPORTANT) */
-/* ========================= */
-
-/* Initial hidden state ONLY for header + title */
+/* ANIMATION */
 .header.hidden,
 .title.hidden {
     opacity: 0;
     transform: translateY(20px);
 }
 
-/* Fade-in animation */
 .header.fade-in,
 .title.fade-in {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
-
-/* 🚫 DO NOT include .termsdate here → stays visible */
-
 
 /* Mobile */
 @media (max-width: 768px) {

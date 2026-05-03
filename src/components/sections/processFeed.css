@@ -24,6 +24,7 @@
     justify-content: center;
     padding: 60px 20px;
     overflow: hidden;
+    background-color: var(--color-bg); /* changed */
 }
 
 .processFeed-wrapper {
@@ -39,28 +40,26 @@
     margin: 20px auto;
     line-height: 28px;
     font-size: 16px;
-    color: rgb(33, 53, 71);
+    color: var(--color-text); /* changed */
     max-width: 750px;
     font-family: Inter, "Noto Sans", "Helvetica Neue", ui-sans-serif, system-ui;
     font-weight: 400;
 }
-
-
 
 .quote-section {
     position: relative;
     max-width: 750px;
     margin: 60px auto;
     padding: 40px 60px;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
+    background: var(--color-bg-card); /* changed */
+    border: 1px solid var(--color-border); /* changed */
 }
 
 .quote-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    color: rgb(33, 53, 71);
+    color: var(--color-text); /* changed */
     display: block;
     margin-bottom: 16px;
     background-image: linear-gradient(to right, transparent 0%, #f2e8e3 20%, #f2e8e3 80%, transparent 100%);
@@ -93,7 +92,7 @@
     font-size: 120px;
     color: #8b2e00;
     line-height: 1;
-    font-family:Georgia, serif;
+    font-family: Georgia, serif;
 }
 
 .quote-mark.top {
@@ -131,7 +130,7 @@
     content: "";
     position: absolute;
     top: 28px;
-    right: 55px; /* 🔥 changed from left */
+    right: 55px;
     width: 60px;
     height: 2px;
     bottom: 85px;
@@ -142,7 +141,7 @@
     content: "";
     position: absolute;
     top: -35px;
-    right: 10px; /* 🔥 changed from left */
+    right: 10px;
     width: 2px;
     height: 35px;
     bottom: 90px;

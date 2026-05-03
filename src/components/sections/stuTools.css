@@ -1,13 +1,13 @@
 .stuTools {
     text-align: center;
-    background: #f3f4f6;
+    background: var(--color-bg-secondary); /* changed */
     padding: 80px 20px;
 }
 
 /* title */
 .stuTools-title {
     font-size: 32px;
-    color: #2c3e50;
+    color: var(--color-text); /* changed */
     margin-bottom: 20px;
     font-family: var(--font-main);
 }
@@ -16,7 +16,7 @@
 .stuTools-description {
     max-width: 700px;
     margin: 0 auto;
-    color: #5f6f7f;
+    color: var(--color-text); /* changed */
     font-size: 18px;
     line-height: 1.6;
     font-family: var(--font-main);
@@ -36,14 +36,11 @@
     width: 260px;
     padding: 35px 25px;
     border-radius: 28px;
-
     background: linear-gradient(180deg, #c3d4ea 0%, #9fb8d6 100%);
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     transition: all 0.3s ease;
 }
 
@@ -91,19 +88,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* space between text + icon */
-
+    gap: 10px;
     padding: 12px 20px;
     border-radius: 999px;
-
     border: 1px solid rgba(30, 80, 140, 0.25);
     background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(6px); /* 🔥 glass effect */
-
+    backdrop-filter: blur(6px);
     color: #1f4f8b;
     font-size: 15px;
     font-weight: 500;
-
     cursor: pointer;
     transition: all 0.2s ease;
 }

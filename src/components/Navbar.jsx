@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import ThemeToggle from './ThemeToggle';
 import logo from '../assets/images/UMSL Project logo design.png';
 
 const navLinks = [
@@ -104,8 +105,10 @@ function Navbar() {
                         )}
                     </li>
                 ))}
+                <li className="nav-item">
+                    <ThemeToggle />
+                </li>
             </ul>
-
             <button className="hamburger" onClick={toggleMenu}>
                 {menuOpen ? '✕' : '☰'}
             </button>

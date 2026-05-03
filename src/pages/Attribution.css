@@ -1,9 +1,10 @@
 .attribution-page {
     min-height: 60vh;
+    background-color: var(--color-bg); /* changed */
 }
 
 .attribution-hero {
-    background-color: #e7f0fd;
+    background-color: var(--color-section-blue); /* changed */
     padding: 80px 16px 40px 16px;
     text-align: center;
 }
@@ -11,7 +12,7 @@
 .attribution-hero h1 {
     opacity: 0.8;
     font-size: 48px;
-    color: #213547;
+    color: var(--color-text); /* changed */
     font-family: var(--font-main);
     font-weight: 400;
     letter-spacing: 0.16px;
@@ -26,14 +27,14 @@
 
 .attribution-content p {
     font-family: var(--font-main);
-    color: #213547;
+    color: var(--color-text); /* changed */
     line-height: 1.8;
     font-size: 16px;
     margin-bottom: 20px;
 }
 
 .attribution-content a {
-    color: #027dff;
+    color: var(--color-link); /* changed */
     text-decoration: underline;
 }
 
@@ -44,12 +45,12 @@
 .attribution-links {
     margin-top: 32px;
     padding-top: 24px;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--color-border); /* changed */
 }
 
 .attribution-links h2 {
     font-family: var(--font-main);
-    color: #003066;
+    color: var(--color-heading); /* changed */
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 8px;
