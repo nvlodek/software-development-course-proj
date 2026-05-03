@@ -3,6 +3,11 @@
     background: linear-gradient(135deg, #eaf7ea, #d4edda);
     padding: 60px 20px;
 }
+
+[data-theme="dark"] .teachTools {
+    background: linear-gradient(135deg, #1a2e25, #1e3a2e);
+}
+
 .teach-card-container {
     display: flex;
     justify-content: center;
@@ -123,6 +128,33 @@
 .fade-element.show.cards {
     animation: fadeUp 0.6s ease forwards;
     animation-delay: 1.5s;
+}
+
+[data-theme="dark"] .teach-card {
+    background: linear-gradient(180deg, #254a38 0%, #1e3a2e 100%);
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .teach-card:hover {
+    background: linear-gradient(180deg, #2d5a44 0%, #254a38 100%);
+    border-color: #4ade80;
+}
+
+[data-theme="dark"] .teach-card h3 {
+    color: #86efac;
+}
+
+[data-theme="dark"] .teach-card li {
+    color: #bbf7d0;
+}
+
+[data-theme="dark"] .teach-card li::before {
+    color: #86efac;
+}
+
+[data-theme="dark"] .teach-card-btn {
+    color: #86efac;
+    border-color: rgba(134, 239, 172, 0.3);
 }
 
 @keyframes fadeUp {
