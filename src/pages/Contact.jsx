@@ -8,41 +8,6 @@ import followUs from '../assets/images/contact-page-5.webp';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mgopoydz';
 
-// Placeholder component for illustrations (replace src with actual images later)
-/*
-function Illustration({ src, alt, className = '', placeholderClass = '' }) {
-    const [loaded, setLoaded] = useState(false);
-    const [error, setError] = useState(false);
-
-    if (!src || error) {
-        return (
-            <div className={`contact-illustration-placeholder ${placeholderClass}`}>
-                <span>{alt || 'Illustration'}</span>
-            </div>
-        );
-    }
-
-    return (
-        <>
-            {!loaded && (
-                <div className={`contact-illustration-placeholder ${placeholderClass}`}>
-                    <span>Loading...</span>
-                </div>
-            )}
-            <img
-                src={src}
-                alt={alt}
-                className={className}
-                onLoad={() => setLoaded(true)}
-                onError={() => setError(true)}
-                style={loaded ? {} : { display: 'none' }}
-                loading="lazy"
-            />
-        </>
-    );
-}
-*/
-
 // Generate decorative oval elements for the hero background
 function HeroOvals() {
     const ovals = [];
@@ -122,14 +87,19 @@ function CheckIcon() {
 }
 
 function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        emailRetype: '',
-        subject: '',
-        message: '',
-        _gotcha: ''
+    const [formData, setFormData] = useState(() => {
+        const saved = localStorage.getItem('contactFormData');
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                return { ...parsed, _gotcha: '' };
+            } catch {
+                return { name: '', email: '', emailRetype: '', subject: '', message: '', _gotcha: '' };
+            }
+        }
+        return { name: '', email: '', emailRetype: '', subject: '', message: '', _gotcha: '' };
     });
+
     const [status, setStatus] = useState({ type: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
@@ -156,6 +126,13 @@ function Contact() {
 
         return () => observer.disconnect();
     }, []);
+
+    useEffect(() => {
+        if (!isSuccess) {
+            const { _gotcha, ...dataToSave } = formData;
+            localStorage.setItem('contactFormData', JSON.stringify(dataToSave));
+        }
+    }, [formData, isSuccess]);
 
     const addSectionRef = (el) => {
         if (el && !sectionRefs.current.includes(el)) {
@@ -246,6 +223,7 @@ function Contact() {
         if (!validateForm()) return;
 
         setIsSubmitting(true);
+        localStorage.removeItem('contactFormData');
         setStatus({ type: 'info', message: 'Sending your message...' });
 
         try {

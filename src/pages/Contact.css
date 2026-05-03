@@ -178,16 +178,9 @@
 }
 
 /* ========== ILLUSTRATION PLACEHOLDERS ========== */
-.contact-illustration {
-    margin: 8px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .contact-illustration img {
     border-radius: 12px;
-    max-width: 220px;
+    max-width: 360px;
     width: 100%;
     height: auto;
 }
@@ -239,7 +232,7 @@
 }
 
 .message-section .form-illustration img {
-    max-width: 350px;
+    max-width: 300px;
     width: 100%;
 }
 
