@@ -99,7 +99,7 @@ function TermsOfService() {
                     service providers, employees, agents, officers, and directors will be limited to the greatest extent
                     permitted by law.
                 </p>
-                <p className='terms-paragraph'>
+                <p className='Terms-paragraph'>
                     Client agrees to indemnify and hold Processfeedback.org, its subsidiaries, affiliates, licensors,
                     service providers, employees, agents, officers, directors, and contractors (the "Indemnified Parties")
                     harmless from any breach of the terms of this agreement by Client. Client agrees that the
@@ -325,17 +325,17 @@ function TermsOfService() {
                     address-remains confidential and is not displayed publicly by Process Feedback. Process Feedback
                     does not sell or share your personal information (such as your name or email) with third parties,
                     except as required by law or to deliver core services (like hosting or analytics) that help us operate
-                    the platform. For full details, please see our <a href='./PrivacyPolicy.jsx' target='_blank' rel='noreferrer' className='terms-link'>Privacy Policy</a>.
+                    the platform. For full details, please see our <a href='/privacy-policy' target='_blank' rel='noreferrer' className='terms-link'>Privacy Policy</a>.
                 </p>
             </div>
             <div className="terms-buttons">
                 <button className="btn-term-primary">
-                    <a href="./PrivacyPolicy.jsx" className="btn-link-terms" target="_blank" rel="noreferrer">
+                    <a href="/privacy-policy" className="btn-link-terms" target="_blank" rel="noreferrer">
                         Read: Privacy Policy </a>
                 </button>
                 <button className="btn-term-primary">
                     <a href="https://processfeedback.org/docs/institutions/" className="btn-link-terms" target="_blank" rel="noreferrer">
-                        Read: Docs and Institutions
+                        Read: Docs for Institutions
                     </a>
                 </button>
             </div>

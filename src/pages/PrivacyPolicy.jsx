@@ -460,7 +460,7 @@ function PrivacyPolicy() {
                 </p>
                 <div className="policy-buttons">
                     <button className="btn-primary">
-                        <a href="./TermsOfService.jsx" className="btn-link" target="blank" rel="noreferrer">
+                        <a href="/terms" className="btn-link" target="blank" rel="noreferrer">
                             Read: Terms and Conditions </a>
                     </button>
                     <button className="btn-primary">
