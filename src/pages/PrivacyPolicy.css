@@ -8,20 +8,22 @@
 
 .PrivacyPolicy-header .header {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--color-text);
-    margin-bottom: 12px;
+    margin-bottom: 30px;
 }
 
 .PrivacyPolicy-header .title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--color-text);
+    line-height: 28px;
     margin-bottom: 16px;
 }
 
 .PrivacyPolicy-header .date {
     font-size: 16px;
+    line-height: 28px;
     color: var(--color-text); /* changed */
     opacity: 0.7; /* changed - to mimic the muted look */
 }
@@ -43,8 +45,9 @@
     background-color: var(--color-bg); /* changed */
 }
 .key-points .header-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
+    line-height: 28px;
     color: var(--color-text);
     margin-bottom: 16px;
 }
@@ -53,12 +56,13 @@
     padding-left: 24px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 0px;
 }
 
 .key-item {
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
     color: var(--color-text);
 }
 
@@ -70,22 +74,25 @@
 }
 
 .section-header {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--color-text);
     margin: 40px 0 16px 0;
+    line-height: 40px;
 }
 
 .subsection-header {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
+    line-height: 36px;
     color: var(--color-text);
     margin: 24px 0 12px 0;
 }
 
 .subsection-description {
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
     color: var(--color-text);
     margin-bottom: 16px;
 }
@@ -100,9 +107,9 @@
 }
 
 .subsection-item {
-    font-size: 15px;
-    font-family: var(--font-main);
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
     color: var(--color-text);
 }
 
@@ -129,8 +136,8 @@
 
 .PrivacyPolicy .btn-primary {
     background: var(--color-bg); /* changed */
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     padding: 14px 32px;
     border-radius: 30px;
     border: 2px solid var(--color-btn-primary); /* changed */
