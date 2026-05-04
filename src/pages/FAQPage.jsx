@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import './FAQPage.css';
 
 function FAQPage() {
@@ -373,10 +373,21 @@ function FAQPage() {
         }
     ];
 
-    return (
-        <div className='faqpage-landscape'>
-            <h2 className='faqpage-header'>Frequently Asked Questions</h2>
+    const [visible, setVisible] = useState(false);
+    const faqRef = useRef(null);
 
+
+
+    return (
+        <>
+            <div className= 'faqpage-header-section'>
+                <h2 className='faqpage-header'>Frequently Asked Questions</h2>
+                <p className='faqpage-subtitle hidden'>
+                    Common Questions about Process Feedback
+                </p>
+            </div>
+
+            <div className='faqpage-content-section'>
             <div className='faqpage-outer-border'>
                 {faqs.map((faq, index) => (
                     <div key={index} className='faqpage-expandable'>
@@ -403,7 +414,8 @@ function FAQPage() {
                     </div>
                 ))}
             </div>
-        </div>
+            </div>
+        </>
     );
 }
 

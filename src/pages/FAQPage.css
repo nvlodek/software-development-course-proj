@@ -8,48 +8,115 @@
     color: var(--color-text);
 }
 
+.faqpage-header-section {
+    background:
+            radial-gradient(
+                    ellipse at 50% 80%, /* push glow DOWN */
+                    rgba(120, 150, 200, 0.20) 0%,
+                    rgba(120, 150, 200, 0.10) 40%,
+                    rgba(120, 150, 200, 0.04) 65%,
+                    transparent 100%
+            ),
+            linear-gradient(
+                    to bottom,
+                    #ffffff 0%,                  /* start WHITE */
+                    rgba(120, 150, 200, 0.08) 60%,  /* fade into blue */
+                    var(--color-bg-secondary) 100%
+            );
+
+    text-align: center;
+    padding: 60px 40px 40px;
+}
+
 .faqpage-header {
     text-align: center;
     margin-bottom: 32px;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
     color: var(--color-text);
 }
 
 .faqpage-outer-border {
-    max-width: 680px;
     margin: 0 auto;
+    max-width: 800px;
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
+.faqpage-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-text);
+    line-height: 28px;
+}
+.faqpage-content-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
 .faqpage-expandable {
+    margin-bottom: 5px;
     width: 100%;
-    background-color: var(--color-bg-card); /* changed */
+    background-color: transparent;
     border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    /* 1. FIXED: Removed double semicolon */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    /* 2. ENSURE: Initial border is clearly defined */
+    border: 1px solid #E5E7EB;
+    /* 3. FIXED: Transitioning only the color to match the hover rule */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    position: relative; /* Ensures border stacking context */
 }
 
 .faqpage-expandable__title-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 20px;
+    padding: 20px 24px;
     background-color: var(--color-bg-card); /* changed */
-    border-radius: 8px;
     cursor: pointer;
     color: var(--color-text);
     user-select: none;
+    transition: background-color 0.2s ease;
 }
 
 .faqpage-expandable__title-bar:hover {
-    background-color: var(--color-section-blue); /* changed */
+    /* 5. CHECK: If this color is too close to #3B82F6, the border will be invisible */
+    background-color: var(--color-section-blue);
+}
+
+/* --- UPDATED HOVER STATE --- */
+.faqpage-expandable:hover {
+    /* 4. FIXED: Only change the border-color, not the whole border property */
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
+}
+
+.faqpage-expandable--open .faqpage-expandable__content {
+    padding: 12px 24px 24px;
+    max-width: 70%;
+}
+.faqpage-expandable--open {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.faqpage-expandable:hover {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
 }
 
 .faqpage-expandable__title {
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-text);
+    line-height: 24px;
+}
+.faqpage-expandable-title:hover {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
 }
 
 .faqpage-expandable__icon {
@@ -73,12 +140,12 @@
 .faqpage-expandable__content {
     min-height: 0;
     overflow: hidden;
-    padding: 0 20px;
     background-color: var(--color-bg-card); /* changed */
     border-radius: 0 0 8px 8px;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 28px;
     color: var(--color-text);
+    font-weight: 400;
 }
 
 .faqpage-expandable--open .faqpage-expandable__content {
