@@ -373,8 +373,8 @@ function FAQPage() {
         }
     ];
 
-    const [visible, setVisible] = useState(false);
-    const faqRef = useRef(null);
+    // const [visible, setVisible] = useState(false);
+    // const faqRef = useRef(null);
 
 
 
