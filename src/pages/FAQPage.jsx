@@ -28,7 +28,7 @@ function FAQPage() {
                     cardsObserver.disconnect();
                 }
             },
-            { threshold: 0.2 }
+            { threshold: 0}
         );
 
         if (headerRef.current) headerObserver.observe(headerRef.current);
