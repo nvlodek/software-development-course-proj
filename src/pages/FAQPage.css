@@ -11,7 +11,7 @@
 .faqpage-header-section {
     background:
             radial-gradient(
-                    ellipse at 50% 80%, /* push glow DOWN */
+                    ellipse at 50% 80%,
                     rgba(120, 150, 200, 0.20) 0%,
                     rgba(120, 150, 200, 0.10) 40%,
                     rgba(120, 150, 200, 0.04) 65%,
@@ -19,13 +19,16 @@
             ),
             linear-gradient(
                     to bottom,
-                    #ffffff 0%,                  /* start WHITE */
-                    rgba(120, 150, 200, 0.08) 60%,  /* fade into blue */
+                    var(--color-bg) 0%,            /* ← was #ffffff */
+                    rgba(120, 150, 200, 0.08) 60%,
                     var(--color-bg-secondary) 100%
             );
+    padding: 40px 40px 40px;
+}
 
-    text-align: center;
-    padding: 60px 40px 40px;
+.faqpage-content-section {
+    background-color: var(--color-bg);   /* ← was #ffffff */
+    padding: 40px 40px 40px;
 }
 
 .faqpage-header {
@@ -50,11 +53,9 @@
     font-size: 16px;
     color: var(--color-text);
     line-height: 28px;
+    text-align: center;
 }
-.faqpage-content-section {
-    background-color: #ffffff;
-    padding: 60px 20px;
-}
+
 .faqpage-expandable {
     margin-bottom: 5px;
     width: 100%;
@@ -87,11 +88,17 @@
     background-color: var(--color-section-blue);
 }
 
-/* --- UPDATED HOVER STATE --- */
+
 .faqpage-expandable:hover {
     /* 4. FIXED: Only change the border-color, not the whole border property */
-    border-color: #3B82F6 !important;
+    border-color: #3b82f6 !important;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
+}
+
+
+.faqpage-expandable--open:hover {
+    border-color: #E5E7EB !important;
+    box-shadow: none !important;
 }
 
 .faqpage-expandable--open .faqpage-expandable__content {
@@ -99,13 +106,31 @@
     max-width: 70%;
 }
 .faqpage-expandable--open {
-    border-color: transparent !important;
-    box-shadow: none !important;
+    border-color: #E5E7EB; /* keep gray */
+    box-shadow: none;
 }
 
-.faqpage-expandable:hover {
-    border-color: #3B82F6 !important;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
+.faqpage-expandable--open .faqpage-expandable__title-bar {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.faqpage-expandable--open .faqpage-expandable__title-bar:hover {
+    border: 1px solid #3b82f6;
+    border-radius: 8px;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .faqpage-expandable__title {
@@ -118,6 +143,7 @@
     border-color: #3B82F6 !important;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
 }
+
 
 .faqpage-expandable__icon {
     transition: transform 0.3s;

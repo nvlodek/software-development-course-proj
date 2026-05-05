@@ -1,7 +1,44 @@
 import React from 'react';
+import {useState, useEffect, useRef} from 'react';
 import './FAQPage.css';
 
 function FAQPage() {
+
+    const [headerVisible, setHeaderVisible] = useState(false);
+    const [cardsVisible, setCardsVisible] = useState(false);
+
+    const headerRef = useRef(null);
+    const cardsRef = useRef(null);
+
+    useEffect(() => {
+        const headerObserver = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setHeaderVisible(true);
+                    headerObserver.disconnect();
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        const cardsObserver = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setCardsVisible(true);
+                    cardsObserver.disconnect();
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        if (headerRef.current) headerObserver.observe(headerRef.current);
+        if (cardsRef.current) cardsObserver.observe(cardsRef.current);
+
+        return () => {
+            headerObserver.disconnect();
+            cardsObserver.disconnect();
+        };
+    }, []);
 
     const faqs = [
         {
@@ -373,22 +410,20 @@ function FAQPage() {
         }
     ];
 
-    // const [visible, setVisible] = useState(false);
-    // const faqRef = useRef(null);
-
-
-
     return (
         <>
-            <div className= 'faqpage-header-section'>
-                <h2 className='faqpage-header'>Frequently Asked Questions</h2>
-                <p className='faqpage-subtitle hidden'>
+            <div className='faqpage-header-section' ref={headerRef}>
+                <h2 className={`faqpage-header ${headerVisible ? "fade-in" : "hidden"}`}>
+                    Frequently Asked Questions
+                </h2>
+
+                <p className={`faqpage-subtitle ${headerVisible ? "fade-in" : "hidden"}`}>
                     Common Questions about Process Feedback
                 </p>
             </div>
 
-            <div className='faqpage-content-section'>
-            <div className='faqpage-outer-border'>
+            <div className='faqpage-content-section' ref={cardsRef}>
+                <div className={`faqpage-outer-border ${cardsVisible ? "fade-in" : "hidden"}`}>
                 {faqs.map((faq, index) => (
                     <div key={index} className='faqpage-expandable'>
                         <div
