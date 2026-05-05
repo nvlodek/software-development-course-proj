@@ -431,6 +431,14 @@ function FAQPage() {
                             onClick={(e) => {
                                 e.currentTarget.parentElement.classList.toggle("faqpage-expandable--open");
                             }}
+                            tabIndex={0}
+                            role="button"
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                    e.preventDefault(); // prevents page scroll on space
+                                    e.currentTarget.parentElement.classList.toggle("faqpage-expandable--open");
+                                }
+                            }}
                         >
                             <span className="faqpage-expandable__title">
                                 {faq.question}

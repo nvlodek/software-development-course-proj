@@ -105,6 +105,7 @@
     padding: 12px 24px 24px;
     max-width: 70%;
 }
+
 .faqpage-expandable--open {
     border-color: #E5E7EB; /* keep gray */
     box-shadow: none;
@@ -172,10 +173,6 @@
     line-height: 28px;
     color: var(--color-text);
     font-weight: 400;
-}
-
-.faqpage-expandable--open .faqpage-expandable__content {
-    padding: 12px 20px 16px;
 }
 
 .faqpage-p {
